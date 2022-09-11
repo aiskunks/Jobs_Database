@@ -1,0 +1,451 @@
+S.No.,City,Job,Salary,Company,Expertise,Recruiter
+1,New York,Data Analyst - Cardiology,78674,Twimbo,Book Reviews,Christabel Radnage
+2,New York,Associate Research Scientist,110453,Skajo,Surveying,Jayson Bladder
+3,New York,Research and Brand Strategy Apprentice,134796,Skiba,TFM,Sophia Corde
+4,New York,City Research Scientist II,64782,Viva,Mac OS,Cary Mac
+5,New York,Business Intelligence Engineer,65769,Oloo,Ghosts,Sonni Tenpenny
+6,New York,Data Engineer,49251,Viva,NYS Notary Public,Amory Partkya
+7,New York,Research Data Associate,76168,Trupe,IT Recruitment,Maxie Chatres
+8,New York,"Senior Analyst, Quantitative Research",91941,Meedoo,Project Management,Alis Gravestone
+9,New York,"Research Engineer, Senior",135534,Skalith,RLM,Siouxie Pettengell
+10,New York,"Research Analyst - Robotics, AI and Machine Learning",86933,Quamba,QC 9.2,Forrester Bearman
+11,New York,Quantitative Analyst,127112,Cogibox,HVAC Controls,Torey Mahaddy
+12,New York,Senior Data Scientist,127118,Izio,CBT,Bryana Willgoose
+13,New York,Lead Data Scientist,110348,Omba,Financial Risk Management,Lalo Gagg
+14,New York,Research Analyst,137235,Brainverse,Vendor Relationship Management,Casey Henrique
+15,New York,Software Engineer/Dev OPS,100291,Tagpad,OTS,Camille O'Doherty
+16,New York,Marketing Manager,47255,Avamm,Rational XDE,Barri Stickins
+17,New York,Cognitive Software Developer,85282,Edgeblab,RMAN,Meggie Skipp
+18,New York,Research Scientist: Control Systems,67549,Twiyo,Small Business Lending,Mollie Sprigg
+19,New York,Sr. Business Intelligence Engineer,128272,Avavee,Hlookups,Kathy Brunskill
+20,New York,Quantitative Business Analyst,46967,Browsezoom,HDSL,Marylin Savin
+21,New York,ITS Service Desk Team Lead,103627,Mydeo,Tourism,Fredrika Samwayes
+22,New York,Director of Data Science,46597,Thoughtbeat,HDPE,Mimi Portinari
+23,New York,Product Development Manager,57439,Livefish,SFE,Niccolo Batters
+24,New York,Quantitative Analyst (Fundamental Quant Equities) - Hedge Fu...,108552,Leexo,CFDs,Shena Manginot
+25,White Plains,"Research Analyst, Perinatal Data Center",82545,Browsebug,SDL Tridion,Any Sphinxe
+26,New York,Account Executive - Razorfish Health,118798,Photospace,Water,Obadias Wellan
+27,Chicago,Marketing Research Analyst,98191,Flashset,Small Boat Operations,Larine Warn
+28,Chicago,Lead Data Scientist - Video/Images,42362,Cogibox,ABAP-OO,Terencio Kestian
+29,Northbrook,"Real World Informatics and Analytics (RWI), Head of Analytic...",81268,Dynazzy,QLab,Bevvy Chilles
+30,Chicago,Part-time Data Science Instructor,133529,Jaxworks,Abaqus,Marney Rushton
+31,Chicago,Data Scientist - Statistics,99082,Rhynyx,Technical Support,Basia Cawte
+32,Chicago,Research Professional,112535,Topicblab,Lymphatic Drainage,Sharl Evison
+33,Deerfield,Senior Statistician,43135,Janyx,Piano Playing,Alexis Goodey
+34,Chicago,Associate Quantitative Research Analyst,67626,Miboo,Design of Experiments,Rudolf Tebbut
+35,Chicago,Director of Data Science,129562,Eare,Ember.js,Brigid Philot
+36,Chicago,Corporate Credit Research Analyst,88460,Voomm,LBO,Logan Hulks
+37,Northbrook,"Assistant Director, Cloud Analytics Strategy",78420,Thoughtbridge,IFR,Evered Pitcaithley
+38,Chicago,Academic Python Developer,42223,Dazzlesphere,Tutoring,Lanette Scarr
+39,Chicago,Manager / Director of Predictive Modeling,124878,Katz,Sony HDV,Feodora McCafferty
+40,Chicago,Construction Manager-Data Center/Mission Critical Facilities,56278,Twitterworks,MPages,Roobbie Casale
+41,Evanston,"Associate Director, Professional Development",64880,Abata,Kaspersky,Cyb Lownes
+42,Chicago,Senior DevOps Engineer,52482,Yakijo,Feature Articles,Austen McArley
+43,San Francisco,Indoor Environmental Data Scientist,124647,Skiptube,DDR,Cathleen Griffitt
+44,San Francisco,Data Scientist - Forecasting,124774,Skilith,Myofascial,Perry Pinson
+45,San Francisco,Data Engineer,116607,Vinte,UV/Vis,Hiram Baudains
+46,San Bruno,"Product Analyst, Data Science",65275,Buzzster,Metro Ethernet,Othilie Brevetor
+47,San Francisco,Software Engineer (Performance & Data),101294,Avamba,WSH,Sander Blaxill
+48,San Francisco,Analyst - Sales Ops & Finance,73854,Camimbo,DTR,Tallia Giamuzzo
+49,San Francisco,Medical Review Specialist,117426,Abatz,Immigration Law,Giacomo Kunert
+50,San Francisco,Data Analyst - Cardiology,121107,Zoomcast,LVDS,Briney Pieter
+51,San Francisco,Associate Research Scientist,43978,Realmix,Twilio,Wilone Klemensiewicz
+52,San Francisco,Research and Brand Strategy Apprentice,42610,Aibox,Basel II,Randi Robbings
+53,San Francisco,City Research Scientist II,129038,Gigaclub,e-QIP,Rollin Dansken
+54,San Francisco,Business Intelligence Engineer,95951,Yakitri,Electrical Troubleshooting,Marty Yannikov
+55,San Francisco,Data Engineer,65880,Wikido,PVR,Rosabella Mulvany
+56,San Francisco,Research Data Associate,87902,Meejo,iView,Arman Germon
+57,Portland,"Senior Analyst, Quantitative Research",48757,Ntag,Hospitality Management,Udale Wetwood
+58,Portland,"Research Engineer, Senior",87605,Divanoodle,Oversight,Ealasaid Iorizzi
+59,Issaquah,"Research Analyst - Robotics, AI and Machine Learning",134777,Kazio,RTM,Yvette Ledrun
+60,Bellevue,Quantitative Analyst,138398,Skinix,CPI,Katharine Coggings
+61,Seattle,Senior Data Scientist,45445,Yacero,Kyocera,Emmey Goldsack
+62,Bellevue,Lead Data Scientist,118894,JumpXS,NFPA,Gusta Brawley
+63,Seattle,Research Analyst,94551,InnoZ,Gigabit Ethernet,Simonette De Maine
+64,Bellevue,Software Engineer/Dev OPS,51595,Dynabox,After FX,Teador Quantrell
+65,Seattle,Marketing Manager,104894,Shuffletag,OBIEE,Michaelina Jestico
+66,Seattle,Cognitive Software Developer,57220,Zoomdog,Food,Rriocard Gorman
+67,Seattle,Research Scientist: Control Systems,137821,Topdrive,JRun,Mella Bellenie
+68,Seattle,Sr. Business Intelligence Engineer,98020,Twiyo,RTI,Avrom Laban
+69,Seattle,Quantitative Business Analyst,74132,Yozio,Tablet PC,Eunice Goodreid
+70,Seattle,ITS Service Desk Team Lead,73677,Linkbuzz,NS-2,Tricia Pledger
+71,Chatsworth,Director of Data Science,115295,Rhynyx,Core FTP,Joelle Wealthall
+72,Pasadena,Product Development Manager,104594,Kamba,Kettlebells,Perren Fever
+73,Burbank,Quantitative Analyst (Fundamental Quant Equities) - Hedge Fu...,122409,Kwideo,XCAL,Brit Ardling
+74,Pasadena,"Research Analyst, Perinatal Data Center",104446,Babbleset,Physical Therapy,Hilario Ruddy
+75,El Segundo,Account Executive - Razorfish Health,100448,Browsezoom,Process Piping Design,Boy Taborre
+76,Los Angeles,Marketing Research Analyst,97084,Katz,CPE,Lissi Muat
+77,Burbank,Lead Data Scientist - Video/Images,130509,Dabvine,PY,Willa MacScherie
+78,Los Angeles,"Real World Informatics and Analytics (RWI), Head of Analytic...",57913,Devbug,Yiddish,Elysia Pinchen
+79,El Segundo,Part-time Data Science Instructor,124093,Rhynoodle,IVD,Chelsey Yerrell
+80,Plymouth Meeting,Data Scientist - Statistics,121289,Rhyloo,NSE,Niko Gammel
+81,Philadelphia,Research Professional,48554,Blogspan,CTRM,Dyann Welsh
+82,Spring House,Senior Statistician,53122,Realpoint,Animal Work,Rinaldo Geal
+83,Philadelphia,Associate Quantitative Research Analyst,120549,Tagchat,Lutron,Nap Gush
+84,Newtown,Director of Data Science,67612,Voonte,Due Diligence,Fabien Sabey
+85,Philadelphia,Corporate Credit Research Analyst,137538,Skidoo,SSADM,Gerry Gallaccio
+86,Philadelphia,"Assistant Director, Cloud Analytics Strategy",59303,Twitternation,Nanomaterials,Carce Dexter
+87,Atlanta,Academic Python Developer,62204,Mydeo,SDLC,Camey Hyndson
+88,Alpharetta,Manager / Director of Predictive Modeling,58615,Youtags,Banquets,Jarrett Konrad
+89,Atlanta,Construction Manager-Data Center/Mission Critical Facilities,135067,Rhyloo,Construction,Susana Seligson
+90,Atlanta,"Associate Director, Professional Development",109384,Kwideo,DV Camera Operator,Koressa Roelvink
+91,Atlanta,Senior DevOps Engineer,124422,Podcat,Water Resources,Cathe Heiden
+92,Atlanta,Indoor Environmental Data Scientist,49368,Pixope,Chromatography,Aileen Voce
+93,Atlanta,Data Scientist - Forecasting,62951,Wikizz,JDE One World,Gallagher O'Neal
+94,Norcross,Data Engineer,96187,Fiveclub,DVP&amp;R,Fanya Phizacklea
+95,Atlanta,"Product Analyst, Data Science",80320,Myworks,Life Sciences,Minnaminnie Garr
+96,Roswell,Software Engineer (Performance & Data),131728,Realpoint,RF Systems,Enrico McCard
+97,Irving,Analyst - Sales Ops & Finance,79440,Roodel,CDO,Cristabel Mollon
+98,Dallas,Medical Review Specialist,124567,Bubbletube,Advertising,Reilly Suggey
+99,Plano,Data Analyst - Cardiology,96942,Gigashots,Brokers,Tarah Loughlin
+100,Irving,Associate Research Scientist,45996,Tanoodle,ODI,Leroi Grimsdell
+101,Plano,Research and Brand Strategy Apprentice,131840,Demimbu,SRT,Temple Ianilli
+102,Irving,City Research Scientist II,134422,Lajo,iBatis,Georgianne Verbrugghen
+103,Plano,Business Intelligence Engineer,46477,Fanoodle,HDI,Jewell Bosquet
+104,Irving,Data Engineer,62096,Bubblemix,VST,Rosabella Feast
+105,Plano,Research Data Associate,99127,Skinix,Urban Forestry,Nealy Aronoff
+106,Pittsburgh,"Senior Analyst, Quantitative Research",106493,Cogibox,PIX,Hillard Santostefano.
+107,Pittsburgh,"Research Engineer, Senior",82818,Jayo,SBR,Rutledge D'Souza
+108,Pittsburgh,"Research Analyst - Robotics, AI and Machine Learning",139913,JumpXS,Administration,Scottie Pinckney
+109,Pittsburgh,Quantitative Analyst,105259,Babbleset,Aquaponics,Sloan Briance
+110,Portland,Senior Data Scientist,97908,Twiyo,Notary Public,Peggi Corthes
+111,San Diego,Lead Data Scientist,71471,Tagpad,Spanish,Karoly Gilbride
+112,La Jolla,Research Analyst,101756,Ooba,UCCE,Marice Lawman
+113,San Diego,Software Engineer/Dev OPS,127378,Pixoboo,External Audit,Antonino Fosken
+114,San Diego,Marketing Manager,70764,Quimm,Work Effectively,Daron Hughill
+115,Denver,Cognitive Software Developer,135917,Podcat,Sales Effectiveness,Izzy Shields
+116,Buckley AFB,Research Scientist: Control Systems,114985,Wikibox,SAP MDM,Noach Paolacci
+117,Boulder,Sr. Business Intelligence Engineer,113670,Eidel,Applied Kinesiology,Bald Sprowell
+118,Denver,Quantitative Business Analyst,108351,Bubblebox,JMS,Tarrance Frensche
+119,Boulder,ITS Service Desk Team Lead,129258,Roodel,Human Capital,Roxie Whittet
+120,Boulder,Director of Data Science,139039,Omba,GPC,Denny Labba
+121,Post Falls,Product Development Manager,94531,Flashdog,Medicine,Lemmie Calcutt
+122,Tampa,Quantitative Analyst (Fundamental Quant Equities) - Hedge Fu...,102917,Browsetype,CTIOS,Gabie Zannolli
+123,New York,"Research Analyst, Perinatal Data Center",105558,Devpoint,TSP,Chloris Jahnig
+124,New York,Account Executive - Razorfish Health,136555,Tavu,Japanese to English,Orly Aymes
+125,New York,Marketing Research Analyst,47874,Skalith,Oil Analysis,Inge Rijkeseis
+126,New York,Lead Data Scientist - Video/Images,80310,Shufflebeat,Digital TV,Valentin Shwalbe
+127,New York,"Real World Informatics and Analytics (RWI), Head of Analytic...",86402,Cogidoo,Oz Principle,Gifford Cockarill
+128,New York,Part-time Data Science Instructor,94688,Realcube,FI-AA,Carolee MacPadene
+129,New York,Data Scientist - Statistics,55222,Jaxspan,Dubbing,Ingunna Hutley
+130,New York,Research Professional,119289,Kwideo,Anti Money Laundering,Essy Aasaf
+131,New York,Senior Statistician,128359,Quaxo,VDM,Sharon Matevushev
+132,New York,Associate Quantitative Research Analyst,69986,Oyondu,Vulnerability Management,Alia Tanzig
+133,New York,Director of Data Science,73796,Brainverse,Integration,Jenelle Fouch
+134,New York,Corporate Credit Research Analyst,138329,Oyoyo,Judo,Tallie Deverick
+135,New York,"Assistant Director, Cloud Analytics Strategy",97745,Feedbug,MBD,Alfreda Bartlam
+136,New York,Academic Python Developer,85272,Viva,Pro-IV,Jeremiah Goacher
+137,New York,Manager / Director of Predictive Modeling,75323,Jabbersphere,Aircraft,Hubey Bagg
+138,New York,Construction Manager-Data Center/Mission Critical Facilities,41196,Yata,Zend Certified Engineer,Eb Hallgate
+139,New York,"Associate Director, Professional Development",45230,Jaloo,Fluid Dynamics,Shirl Halloway
+140,New York,Senior DevOps Engineer,70343,Browsecat,Radio Host,Anatola Papis
+141,New York,Indoor Environmental Data Scientist,108500,Realcube,BSC,Vitia Marsland
+142,New York,Data Scientist - Forecasting,120337,Zoomdog,Zoho,Marlee Dodman
+143,New York,Data Engineer,53440,Mydo,HL7,Nikita Stather
+144,New York,"Product Analyst, Data Science",88990,Flashspan,Public Health,Fredrika Safe
+145,New York,Software Engineer (Performance & Data),136612,Dazzlesphere,Broadband,Gradeigh Zaniolini
+146,New York,Analyst - Sales Ops & Finance,87964,Eabox,JBoss Seam,Kate Gerring
+147,White Plains,Medical Review Specialist,42592,Shuffletag,Kernel Programming,Sandye Danson
+148,New York,Data Analyst - Cardiology,44747,Camimbo,PFS,Biddie Kennaway
+149,Chicago,Associate Research Scientist,87101,Avavee,Coaching,Dan Hartle
+150,Chicago,Research and Brand Strategy Apprentice,49340,Skiba,McKesson STAR,Leena Dowker
+151,Northbrook,City Research Scientist II,126368,Youspan,RCT,Say Bramah
+152,Chicago,Business Intelligence Engineer,93234,Buzzshare,Data Warehousing,Elmer Dysert
+153,Chicago,Data Engineer,120051,Twimbo,Pyxis,Tess Nevison
+154,Chicago,Research Data Associate,133730,Wordtune,Zend,Jedidiah Paddick
+155,Deerfield,"Senior Analyst, Quantitative Research",133268,Aimbu,WDF,Aleksandr Sell
+156,Chicago,"Research Engineer, Senior",127434,Oyonder,Advertising,Gerrie Mollnar
+157,Chicago,"Research Analyst - Robotics, AI and Machine Learning",119020,Tagtune,ICAO,Broddie Geoghegan
+158,Chicago,Quantitative Analyst,52094,Brightdog,Classroom,Ariela Terbrug
+159,Northbrook,Senior Data Scientist,111423,Voonyx,ODM management,Judi Abrahmer
+160,Chicago,Lead Data Scientist,117306,LiveZ,Supply Chain Management,Annabelle Laroze
+161,Chicago,Research Analyst,49037,Babbleblab,EIP,Olly Prestney
+162,Chicago,Software Engineer/Dev OPS,94041,Skajo,PL/SQL,Bethena Lafrentz
+163,Evanston,Marketing Manager,125850,Yakidoo,Military,Maddi Degoy
+164,Chicago,Cognitive Software Developer,129254,Demizz,Flyers,Livia Suthren
+165,San Francisco,Research Scientist: Control Systems,131714,Vipe,MXF,Koressa Stamper
+166,San Francisco,Sr. Business Intelligence Engineer,122004,Thoughtblab,YAML,Pansie Golston
+167,San Francisco,Quantitative Business Analyst,83063,Yabox,TGA,Emmit Thompson
+168,San Bruno,ITS Service Desk Team Lead,117710,Avavee,Statistics,Torre Duiguid
+169,San Francisco,Director of Data Science,99816,Tavu,Ice Hockey,Dani Samworth
+170,San Francisco,Product Development Manager,136174,Feedspan,PyQt,Stephi Heaslip
+171,San Francisco,Quantitative Analyst (Fundamental Quant Equities) - Hedge Fu...,52030,Tagtune,JBA,Ezekiel Ludlom
+172,San Francisco,"Research Analyst, Perinatal Data Center",114557,Avaveo,Yardi Enterprise,Garnet Kareman
+173,San Francisco,Account Executive - Razorfish Health,80169,Yata,American Literature,Joyous Josipovitz
+174,San Francisco,Marketing Research Analyst,121877,Jazzy,Aqualogic,Esdras McLinden
+175,San Francisco,Lead Data Scientist - Video/Images,65596,Fivespan,Special Effects Makeup,Arlen Trower
+176,San Francisco,"Real World Informatics and Analytics (RWI), Head of Analytic...",135356,Yakijo,z/OS,Onida Alexandrou
+177,San Francisco,Part-time Data Science Instructor,122059,Meezzy,LabWindows/CVI,Lay McCrillis
+178,San Francisco,Data Scientist - Statistics,44339,Skinder,ATM Networks,Vonny Hardaker
+179,Portland,Research Professional,95392,Bubbletube,Microsoft Certified Professional,Frazer Cobain
+180,Portland,Senior Statistician,97973,Skajo,BC/DR,Oliver Hicklingbottom
+181,Issaquah,Associate Quantitative Research Analyst,115979,Voomm,Volleyball,Westbrooke Houldey
+182,Bellevue,Director of Data Science,49003,Buzzbean,DDL,Jacquetta Chartres
+183,Seattle,Corporate Credit Research Analyst,90140,Meevee,EBP,Bernardine Armer
+184,Bellevue,"Assistant Director, Cloud Analytics Strategy",101017,Youfeed,Okuma,Suzanne Irvin
+185,Seattle,Academic Python Developer,81358,Jabbertype,Family Medicine,Sukey Plet
+186,Bellevue,Manager / Director of Predictive Modeling,106359,Edgetag,Visual Communication,Jeff Aireton
+187,Seattle,Construction Manager-Data Center/Mission Critical Facilities,75427,Vidoo,Foreign Trade Zone,Lorraine Jobbings
+188,Seattle,"Associate Director, Professional Development",102041,Zava,SMT Kingdom,Irena Francis
+189,Seattle,Senior DevOps Engineer,118363,Flashpoint,Financial Audits,Lorrie Gwalter
+190,Seattle,Indoor Environmental Data Scientist,135516,Browsebug,Watercolor Illustration,Cheslie Dyte
+191,Seattle,Data Scientist - Forecasting,125098,Trilia,EKG,Belinda Greenway
+192,Seattle,Data Engineer,97628,Mydo,HP Servers,Miller Connelly
+193,Chatsworth,"Product Analyst, Data Science",83708,Innojam,GCC,Lemmy D'Abbot-Doyle
+194,Pasadena,Software Engineer (Performance & Data),111972,Brightdog,Iyengar Yoga,Danna Roan
+195,Burbank,Analyst - Sales Ops & Finance,52664,Dabjam,Systems Design,Dominik Pedreschi
+196,Pasadena,Medical Review Specialist,120182,Flashset,Asset Management,Juliane Tawse
+197,El Segundo,Data Analyst - Cardiology,44512,Zoombox,Online Advertising,Kippy Martynov
+198,Los Angeles,Associate Research Scientist,105572,Topicblab,CV,Mariejeanne Sirmond
+199,Burbank,Research and Brand Strategy Apprentice,123415,BlogXS,RPL,Blinnie Assante
+200,Los Angeles,City Research Scientist II,81058,Jabbertype,Program Evaluation,Margaux Wise
+201,El Segundo,Business Intelligence Engineer,41283,Meembee,CPE,Berni Jacqueminot
+202,Plymouth Meeting,Data Engineer,72483,Wordpedia,GMDSS,Farah Kwiek
+203,Philadelphia,Research Data Associate,90129,Skimia,TNS Media Intelligence,Armstrong Jurges
+204,Spring House,"Senior Analyst, Quantitative Research",63358,Leenti,ISO 9000,Cynthie Furzer
+205,Philadelphia,"Research Engineer, Senior",64922,Buzzdog,Electricians,Gretna Gear
+206,Newtown,"Research Analyst - Robotics, AI and Machine Learning",63128,Yakijo,Aesthetic Surgery,Allin Kaes
+207,Philadelphia,Quantitative Analyst,70459,Vidoo,Agilent ADS,Lydia Quinsee
+208,Philadelphia,Senior Data Scientist,126629,Twinte,XML Gateway,Quentin Nugent
+209,Atlanta,Lead Data Scientist,114956,Riffpedia,Web Typography,Svend Lyptrit
+210,Alpharetta,Research Analyst,103379,Pixoboo,Fences,Lolita Drewe
+211,Atlanta,Software Engineer/Dev OPS,89592,Vinte,Team Building,Hazel Swindles
+212,Atlanta,Marketing Manager,120955,Bluejam,ETFs,Marvin Bulpitt
+213,Atlanta,Cognitive Software Developer,106556,Realbuzz,Food Industry,Kris Lander
+214,Atlanta,Research Scientist: Control Systems,73545,Centidel,Business Development,Orson Maytom
+215,Atlanta,Sr. Business Intelligence Engineer,96614,Flipopia,MPages,Eldon Bartoli
+216,Norcross,Quantitative Business Analyst,45970,Avamm,GLP,Maryellen Briston
+217,Atlanta,ITS Service Desk Team Lead,106833,Aimbu,ICAO,Delbert Mitchelson
+218,Roswell,Director of Data Science,114381,Aimbo,Ecology,Daven Barclay
+219,Irving,Product Development Manager,139330,Kimia,Global Human Resources Management,Audrie Fitchell
+220,Dallas,Quantitative Analyst (Fundamental Quant Equities) - Hedge Fu...,78956,Livepath,BFD,Gayle Dobby
+221,Plano,"Research Analyst, Perinatal Data Center",52364,Youbridge,Electricity,Danya Carbin
+222,Irving,Account Executive - Razorfish Health,138425,Gigabox,EEOC,Dena Verbeek
+223,Plano,Marketing Research Analyst,75076,Oyondu,WTT,Cosimo Hazeldene
+224,Irving,Lead Data Scientist - Video/Images,90072,Blogpad,Type Approval,Tobey Elliston
+225,Plano,"Real World Informatics and Analytics (RWI), Head of Analytic...",63976,Meejo,HP NonStop,Simon Betterton
+226,Irving,Part-time Data Science Instructor,66863,Aimbo,Turbo C++,Crawford Scapelhorn
+227,Plano,Data Scientist - Statistics,51787,Tekfly,XACT,Herta Bradder
+228,Pittsburgh,Research Professional,59894,Dabjam,High Sense Of Urgency,Artemis Wincer
+229,Pittsburgh,Senior Statistician,111683,Skimia,Audio Engineering,Dedra Cubbinelli
+230,Pittsburgh,Associate Quantitative Research Analyst,79367,Brightbean,Drywall,Spencer MacEntee
+231,Pittsburgh,Director of Data Science,77610,Jaxworks,BMP,Burk Ouchterlony
+232,Portland,Corporate Credit Research Analyst,75494,Kimia,Current Affairs,Loree Samarth
+233,San Diego,"Assistant Director, Cloud Analytics Strategy",64219,Tagpad,QAD,Jacintha Mulran
+234,La Jolla,Academic Python Developer,81415,Yabox,RCT,Tedda Frisby
+235,San Diego,Manager / Director of Predictive Modeling,72220,Yata,BPH,Garrett Humbey
+236,San Diego,Construction Manager-Data Center/Mission Critical Facilities,56716,Abatz,NCSim,Aurelea MacKibbon
+237,Denver,"Associate Director, Professional Development",111945,Gabtune,CQT,Aldin Kyffin
+238,Buckley AFB,Senior DevOps Engineer,97854,Gabcube,Agrochemicals,Esra Janowski
+239,Boulder,Indoor Environmental Data Scientist,73625,Twitterworks,WCAG,Sigfrid Skone
+240,Denver,Data Scientist - Forecasting,119494,Linklinks,Marketing Strategy,Nichols Swetland
+241,Boulder,Data Engineer,118051,Photobean,General Surgery,Enrika Chattoe
+242,Boulder,"Product Analyst, Data Science",126317,Tagtune,FMLA,Arly Weaver
+243,Post Falls,Software Engineer (Performance & Data),61564,DabZ,AMSI,Robbin Collman
+244,Tampa,Analyst - Sales Ops & Finance,124152,Cogibox,Foreclosures,Wanids Kleinsmuntz
+245,New York,Medical Review Specialist,53096,Buzzster,Baan ERP,Pepi Luetkemeyers
+246,New York,Data Analyst - Cardiology,129905,Oyoyo,CSCP,Rudiger Faire
+247,New York,Associate Research Scientist,105750,Zoozzy,Offshore Drilling,Claresta McCoid
+248,New York,Research and Brand Strategy Apprentice,88820,Edgeblab,JRockit,Edith Semonin
+249,New York,City Research Scientist II,111837,Gigazoom,Estimates,Clevie Juarez
+250,New York,Business Intelligence Engineer,89798,Topicshots,JCreator,Rip Reynolds
+251,New York,Data Engineer,79629,Meemm,VTS,Louise Coom
+252,New York,Research Data Associate,50622,Rooxo,MCT,Farrell Degue
+253,New York,"Senior Analyst, Quantitative Research",50080,Kwideo,Smart Cards,Andie Romney
+254,New York,"Research Engineer, Senior",93783,Quinu,uDig,Cointon Greenhalgh
+255,New York,"Research Analyst - Robotics, AI and Machine Learning",136965,Browsebug,XForms,Lulita Cawsby
+256,New York,Quantitative Analyst,97059,Twiyo,BTE,Stephenie Rimell
+257,New York,Senior Data Scientist,105678,Zazio,Veneers,Jerrine Waiting
+258,New York,Lead Data Scientist,131898,Skyndu,Glasses,Corella Cosslett
+259,New York,Research Analyst,115851,Meejo,SAP PM Module,Rudie Edney
+260,New York,Software Engineer/Dev OPS,133351,Tambee,SVG,Kalli Dorot
+261,New York,Marketing Manager,121318,Shuffledrive,UFS,Aimee Olyfant
+262,New York,Cognitive Software Developer,52202,Dabjam,MDX,Hammad Towhey
+263,New York,Research Scientist: Control Systems,54700,Realcube,Bonds,Reese Simonett
+264,New York,Sr. Business Intelligence Engineer,82626,Eabox,RLU,Gerardo Rundall
+265,New York,Quantitative Business Analyst,94954,Ailane,UG,Kira Lowndes
+266,New York,ITS Service Desk Team Lead,42559,Gigazoom,Enterprise Software,Wadsworth Macenzy
+267,New York,Director of Data Science,100914,Gigabox,QI,Kimberli Gorger
+268,New York,Product Development Manager,101607,Topicware,Administrative Assistance,Bernadene Palumbo
+269,White Plains,Quantitative Analyst (Fundamental Quant Equities) - Hedge Fu...,137986,Zoomcast,UDS,Gerek Greaves
+270,New York,"Research Analyst, Perinatal Data Center",62007,Oba,Key Opinion Leaders,Kiersten Christoffels
+271,Chicago,Account Executive - Razorfish Health,97557,Demimbu,NMock,Jacklin Barkes
+272,Chicago,Marketing Research Analyst,56849,Ozu,GPG,Christy Bendson
+273,Northbrook,Lead Data Scientist - Video/Images,62074,Tazz,RRC,Perle Chaffe
+274,Chicago,"Real World Informatics and Analytics (RWI), Head of Analytic...",85100,Realbuzz,End User Training,Benyamin Poolton
+275,Chicago,Part-time Data Science Instructor,62192,Flashspan,Risk Analysis,Tamarra Glew
+276,Chicago,Data Scientist - Statistics,99554,Feedspan,DBI,Creight Rollin
+277,Deerfield,Research Professional,43451,Layo,Abstraction,Juline Ambroix
+278,Chicago,Senior Statistician,133356,Feedmix,Amadeus GDS,Yehudit Leathes
+279,Chicago,Associate Quantitative Research Analyst,111614,Agimba,SFTP,Carleen Gerber
+280,Chicago,Director of Data Science,72021,Babbleset,NHPA,Cal Bordes
+281,Northbrook,Corporate Credit Research Analyst,47203,Tazzy,Telephone Skills,Reagen Hollingsby
+282,Chicago,"Assistant Director, Cloud Analytics Strategy",76391,Centidel,Long-term Care,Antonius Springer
+283,Chicago,Academic Python Developer,95623,Photofeed,SVG,Herman Stoddard
+284,Chicago,Manager / Director of Predictive Modeling,92538,Voonder,Performing Arts,Aloise Pilsworth
+285,Evanston,Construction Manager-Data Center/Mission Critical Facilities,134884,Tagfeed,Light Rail,Merilee McNeillie
+286,Chicago,"Associate Director, Professional Development",42368,Dazzlesphere,Assisting Others,Bartlet Devenny
+287,San Francisco,Senior DevOps Engineer,87008,Fadeo,CMM,Octavius Hanney
+288,San Francisco,Indoor Environmental Data Scientist,58872,Feedbug,Quality Control,Lucias Wetton
+289,San Francisco,Data Scientist - Forecasting,100942,Babbleopia,RFP Generation,Polly Speake
+290,San Bruno,Data Engineer,71279,Mybuzz,HSE auditing,Kendrick Soggee
+291,San Francisco,"Product Analyst, Data Science",71740,Linklinks,Art Exhibitions,Cahra Lillow
+292,San Francisco,Software Engineer (Performance & Data),118996,Quamba,JFace,Mariejeanne Hodinton
+293,San Francisco,Analyst - Sales Ops & Finance,63037,Zoozzy,NI Multisim,Sunny Trippett
+294,San Francisco,Medical Review Specialist,122003,Camido,BFD,Hallie Kiely
+295,San Francisco,Data Analyst - Cardiology,95310,Blogtags,Vyatta,Randy Purdie
+296,San Francisco,Associate Research Scientist,108845,Centizu,Yarn,Corrie Perview
+297,San Francisco,Research and Brand Strategy Apprentice,50830,Zoonder,HTML Help Workshop,Josey Rosencwaig
+298,San Francisco,City Research Scientist II,84674,Eayo,Project Planning,Garv Dwine
+299,San Francisco,Business Intelligence Engineer,138293,Meevee,KnockoutJS,Terrell MacTague
+300,San Francisco,Data Engineer,53202,Twitternation,Art Direction,Bridget Woodison
+301,Portland,Research Data Associate,92897,Jaxworks,Pumps,Kelsey Johnke
+302,Portland,"Senior Analyst, Quantitative Research",103446,Innojam,Financial Analysis,Rachael Fust
+303,Issaquah,"Research Engineer, Senior",85544,Rhynyx,Fashion GPS,Evelina Marciek
+304,Bellevue,"Research Analyst - Robotics, AI and Machine Learning",114641,Oyoloo,LPS,Natty Yashnov
+305,Seattle,Quantitative Analyst,81672,Photofeed,Static Timing Analysis,Albina Woodrup
+306,Bellevue,Senior Data Scientist,134902,Wikibox,XPAC,Fawne Mingey
+307,Seattle,Lead Data Scientist,60824,Feedspan,CMiC,Jessie Paulich
+308,Bellevue,Research Analyst,98261,Plambee,CD covers,Bernie Arrault
+309,Seattle,Software Engineer/Dev OPS,127152,Tagopia,Switching,Hervey Hugin
+310,Seattle,Marketing Manager,62213,Jaxnation,SBRT,Rolfe Worvill
+311,Seattle,Cognitive Software Developer,67605,Voonder,QC Tools,Garrot Rivitt
+312,Seattle,Research Scientist: Control Systems,73495,Realblab,Kurzweil,Albertina Elldred
+313,Seattle,Sr. Business Intelligence Engineer,122568,Kayveo,Occupational Therapists,Brandyn Aim
+314,Seattle,Quantitative Business Analyst,60427,Fatz,Solar PV,Simmonds Caught
+315,Chatsworth,ITS Service Desk Team Lead,100725,Livepath,Eyelash Extensions,Clarissa Tresler
+316,Pasadena,Director of Data Science,66767,Eire,SMT,Ralph Barchrameev
+317,Burbank,Product Development Manager,64822,Browsetype,Employee Benefits,Portie Aleksahkin
+318,Pasadena,Quantitative Analyst (Fundamental Quant Equities) - Hedge Fu...,126716,Gevee,e-QIP,Sherilyn Finnimore
+319,El Segundo,"Research Analyst, Perinatal Data Center",68676,Browsecat,FW,Tiffanie Brunotti
+320,Los Angeles,Account Executive - Razorfish Health,63870,Eayo,Corporate Identity,Idelle Outright
+321,Burbank,Marketing Research Analyst,66505,Edgeblab,Key Account Development,Heddi Wilson
+322,Los Angeles,Lead Data Scientist - Video/Images,47047,Dablist,BSR Advance,Tasia Abrahmer
+323,El Segundo,"Real World Informatics and Analytics (RWI), Head of Analytic...",87945,Podcat,Piano Education,Sigismundo Limon
+324,Plymouth Meeting,Part-time Data Science Instructor,97670,Trupe,ADP HRB,Shannan Davenhill
+325,Philadelphia,Data Scientist - Statistics,93252,Shuffledrive,BMV,Giffie Moens
+326,Spring House,Research Professional,105583,Voonte,Pre-sales,Mario Jarvie
+327,Philadelphia,Senior Statistician,85725,Flipstorm,Slope Stability Analysis,Fonsie Boomes
+328,Newtown,Associate Quantitative Research Analyst,70695,Topicshots,CQS,Burch Presdie
+329,Philadelphia,Director of Data Science,132884,Eazzy,MS Integration Services,Sidonia Prudham
+330,Philadelphia,Corporate Credit Research Analyst,99030,Quinu,UNIX Utilities,Isador Sorbey
+331,Atlanta,"Assistant Director, Cloud Analytics Strategy",84138,Vinte,ICH-GCP,Elden Songust
+332,Alpharetta,Academic Python Developer,62342,Fadeo,Omega,Pepita Mehaffey
+333,Atlanta,Manager / Director of Predictive Modeling,42995,Izio,Outsourcing,Edward Aylwin
+334,Atlanta,Construction Manager-Data Center/Mission Critical Facilities,122188,Kazu,PBUSE,Nissie Carbert
+335,Atlanta,"Associate Director, Professional Development",84976,Browseblab,Global Delivery,Valry Libbie
+336,Atlanta,Senior DevOps Engineer,41025,Ainyx,McAfee Antivirus,Shandra Georgievski
+337,Atlanta,Indoor Environmental Data Scientist,86366,Skinix,Target Identification,Siobhan Hurnell
+338,Norcross,Data Scientist - Forecasting,67829,Kwilith,Latin American Studies,Evy Robuchon
+339,Atlanta,Data Engineer,129570,Edgetag,Brand Development,Blair Loosemore
+340,Roswell,"Product Analyst, Data Science",117754,Snaptags,Slovak,Arvie Downing
+341,Irving,Software Engineer (Performance & Data),84632,Voomm,WSIB,Isidoro Mitkcov
+342,Dallas,Analyst - Sales Ops & Finance,63318,Youopia,Logo Design,Clerissa Falconar
+343,Plano,Medical Review Specialist,69620,Thoughtmix,Youth Mentoring,Cesaro Mudie
+344,Irving,Data Analyst - Cardiology,40086,Browsezoom,Railway,Margery Grazier
+345,Plano,Associate Research Scientist,69939,Quamba,NCQA,Papagena Eadon
+346,Irving,Research and Brand Strategy Apprentice,128962,Tagcat,eEmpact,Lance Robey
+347,Plano,City Research Scientist II,97000,Flashspan,DTMF,Shell Warbeys
+348,Irving,Business Intelligence Engineer,119548,Gabtune,Claims Management,Jobi Khan
+349,Plano,Data Engineer,44841,Jayo,Employee Management,Shandeigh Meiklem
+350,Pittsburgh,Research Data Associate,79112,Meemm,BPF,Marilin Gowrie
+351,Pittsburgh,"Senior Analyst, Quantitative Research",63568,Skipfire,ZFS,Tyson Tokell
+352,Pittsburgh,"Research Engineer, Senior",51246,Photolist,Eyewonder,Magdalen Gerrelts
+353,Pittsburgh,"Research Analyst - Robotics, AI and Machine Learning",54144,Quimba,Econometrics,Julissa Dossettor
+354,Portland,Quantitative Analyst,117970,Gabspot,International Humanitarian Law,Ardath Vasyukhin
+355,San Diego,Senior Data Scientist,123495,Feedspan,Blood Typing,Alric Hesser
+356,La Jolla,Lead Data Scientist,75611,Mycat,Gym,Rosalinda Bossingham
+357,San Diego,Research Analyst,106255,Brightdog,Lync,Artemas Fyers
+358,San Diego,Software Engineer/Dev OPS,86476,Zava,Crystal Reports,Blythe Wilford
+359,Denver,Marketing Manager,114572,Bubblebox,Systems Analysis,Kathye Skyppe
+360,Buckley AFB,Cognitive Software Developer,94017,Zoomlounge,HR Strategy,Gannon Pruvost
+361,Boulder,Research Scientist: Control Systems,123443,Livetube,Flight Test,Natassia Capelin
+362,Denver,Sr. Business Intelligence Engineer,88806,Bubblemix,GNU Debugger,Nicolis Woodcock
+363,Boulder,Quantitative Business Analyst,68391,Brightdog,Multimedia,Flint Pettyfer
+364,Boulder,ITS Service Desk Team Lead,101325,Geba,SBA 504,Barnett Hubball
+365,Post Falls,Director of Data Science,57860,Dabtype,TM1,Corina Samuels
+366,Tampa,Product Development Manager,118559,Feedfish,Motivational Interviewing,Annis Roomes
+367,New York,Quantitative Analyst (Fundamental Quant Equities) - Hedge Fu...,81481,Jabbercube,Cisco Technologies,Doralia McGrirl
+368,New York,"Research Analyst, Perinatal Data Center",43422,Meezzy,Knee,Eberto Muller
+369,New York,Account Executive - Razorfish Health,103921,Voonyx,ABAP-OO,Juieta Royson
+370,New York,Marketing Research Analyst,93617,Photobug,Logging,Reinold Dunford
+371,New York,Lead Data Scientist - Video/Images,134014,Flipopia,CFTC,Ertha McMichell
+372,New York,"Real World Informatics and Analytics (RWI), Head of Analytic...",106484,Aivee,PXRD,Purcell Jaquest
+373,New York,Part-time Data Science Instructor,99482,Shuffletag,IxChariot,Georgeanna Grugerr
+374,New York,Data Scientist - Statistics,43304,Meevee,Atmel AVR,Belia Benner
+375,New York,Research Professional,54485,Abata,General Insurance,Khalil Erat
+376,New York,Senior Statistician,108665,Linktype,VNC,Nikolas Lathy
+377,New York,Associate Quantitative Research Analyst,84941,Zoovu,Legal Liability,Lebbie Derr
+378,New York,Director of Data Science,136058,Skinder,EoMPLS,Elnore Hand
+379,New York,Corporate Credit Research Analyst,79915,Browsecat,HR Strategy,Haleigh Coggin
+380,New York,"Assistant Director, Cloud Analytics Strategy",121145,Vidoo,Benefits Administration,Gerianna Pacht
+381,New York,Academic Python Developer,69222,Thoughtstorm,Navisworks,Daisy Colquite
+382,New York,Manager / Director of Predictive Modeling,44844,Vidoo,WDS,Shirlee MacGrath
+383,New York,Construction Manager-Data Center/Mission Critical Facilities,50751,Browsetype,Digital Media,Dacy Ughi
+384,New York,"Associate Director, Professional Development",49617,Dabvine,Clinical Research,Aurie Burlingham
+385,New York,Senior DevOps Engineer,137069,Kazu,JCE,Maje Laborda
+386,New York,Indoor Environmental Data Scientist,94411,Quinu,Published Author,Angeli Ranger
+387,New York,Data Scientist - Forecasting,129560,Oyoloo,Algorithms,Burnard Pinney
+388,New York,Data Engineer,119456,Cogilith,Aircraft Maintenance,Caleb Lynn
+389,New York,"Product Analyst, Data Science",78245,Meetz,ESB,Danita McBrearty
+390,New York,Software Engineer (Performance & Data),58389,Gigazoom,VMI,Wini McGurk
+391,White Plains,Analyst - Sales Ops & Finance,49274,Eadel,JNCIP,Dianna Pinnion
+392,New York,Medical Review Specialist,61836,Realcube,FWSM,Devlen Stacey
+393,Chicago,Data Analyst - Cardiology,123618,Vidoo,Drums,Rriocard Castane
+394,Chicago,Associate Research Scientist,109044,Quatz,Hygiene,Pansie Perrinchief
+395,Northbrook,Research and Brand Strategy Apprentice,43175,Midel,HTTPWatch,Georges Jump
+396,Chicago,City Research Scientist II,138148,Thoughtblab,XDCAM,Paige Desseine
+397,Chicago,Business Intelligence Engineer,130825,Babbleblab,Wheat,Lorens Huikerby
+398,Chicago,Data Engineer,100620,Twinder,Yard Work,Orran Seamarke
+399,Deerfield,Research Data Associate,51535,Podcat,Medical Nutrition Therapy,Vernice Valenta
+400,Chicago,"Senior Analyst, Quantitative Research",78476,Dabjam,JRun,Tuck Trousdale
+401,Chicago,"Research Engineer, Senior",66274,Vimbo,Blender,Elene Ramard
+402,Chicago,"Research Analyst - Robotics, AI and Machine Learning",112014,Jaxbean,Korean,Lenette Veldstra
+403,Northbrook,Quantitative Analyst,92121,Geba,WTX,Heindrick Brimacombe
+404,Chicago,Senior Data Scientist,58255,Bluejam,Jet Engines,Ring Trollope
+405,Chicago,Lead Data Scientist,113997,Twitterlist,Aquifer Testing,Modesta Durrans
+406,Chicago,Research Analyst,83407,Omba,QCAT,Wally Harrigan
+407,Evanston,Software Engineer/Dev OPS,56374,Flashpoint,Slogans,Martin Hanlon
+408,Chicago,Marketing Manager,93391,Mudo,Eagle PCB,Carolin Trowsdall
+409,San Francisco,Cognitive Software Developer,104914,Gigabox,Architectural Design,Gianina Josefer
+410,San Francisco,Research Scientist: Control Systems,78574,Skipstorm,Aquatic Ecology,Tammie Shewen
+411,San Francisco,Sr. Business Intelligence Engineer,106731,Twimm,Piano,Berny Jeduch
+412,San Bruno,Quantitative Business Analyst,85179,Voonyx,Hazard Recognition,Lowrance Quinney
+413,San Francisco,ITS Service Desk Team Lead,121811,Gabspot,Offshore Drilling,Hayes Twatt
+414,San Francisco,Director of Data Science,106103,Roombo,MbUnit,Casey Punt
+415,San Francisco,Product Development Manager,136425,Vidoo,Industrial Ethernet,Titos Jepperson
+416,San Francisco,Quantitative Analyst (Fundamental Quant Equities) - Hedge Fu...,80609,Photobean,Reactive Ion Etching,Millard Summerly
+417,San Francisco,"Research Analyst, Perinatal Data Center",107656,Browsecat,Luxury,Abagail Jacobssen
+418,San Francisco,Account Executive - Razorfish Health,70404,Trudeo,Mining,Godfrey Dubber
+419,San Francisco,Marketing Research Analyst,134315,Eabox,Fashion Blogging,Mick Orrah
+420,San Francisco,Lead Data Scientist - Video/Images,71432,Roomm,CVE,Dale Curtayne
+421,San Francisco,"Real World Informatics and Analytics (RWI), Head of Analytic...",50186,Browsedrive,Urdu,Nehemiah Tumpane
+422,San Francisco,Part-time Data Science Instructor,85262,Ailane,PPP,Rheta Elt
+423,Portland,Data Scientist - Statistics,96688,Wordtune,People Management,Kandy Liquorish
+424,Portland,Research Professional,95082,Aivee,GSX,Ian Churchouse
+425,Issaquah,Senior Statistician,46179,Rhynyx,IMS DB/DC,Jerrine Cavalier
+426,Bellevue,Associate Quantitative Research Analyst,101709,Voolith,UHV,Myrna Minnock
+427,Seattle,Director of Data Science,127263,Trunyx,Events Coordination,Allissa Kalkhoven
+428,Bellevue,Corporate Credit Research Analyst,116989,Realmix,PFTrack,Aprilette Whitnell
+429,Seattle,"Assistant Director, Cloud Analytics Strategy",54765,Abata,GC-FID,Karissa Naptin
+430,Bellevue,Academic Python Developer,76297,Skimia,VRU,Neal Grasner
+431,Seattle,Manager / Director of Predictive Modeling,82839,Oyope,MicroStation,Bartolemo Kendle
+432,Seattle,Construction Manager-Data Center/Mission Critical Facilities,100815,Skyble,Scanning Electron Microscopy,Kendell Kusick
+433,Seattle,"Associate Director, Professional Development",47071,Thoughtblab,RC Detailing,Cam Warlowe
+434,Seattle,Senior DevOps Engineer,90428,Kwilith,IAR Embedded Workbench,Kacie Gilphillan
+435,Seattle,Indoor Environmental Data Scientist,106819,Jaxworks,IEEE,Antonina Borrington
+436,Seattle,Data Scientist - Forecasting,103020,Tagpad,Financial Audits,Sara Vassel
+437,Chatsworth,Data Engineer,55928,Zoovu,cGMP manufacturing,Francisca Lody
+438,Pasadena,"Product Analyst, Data Science",131703,Thoughtsphere,CADS RC,Andreana Wills
+439,Burbank,Software Engineer (Performance & Data),132125,Fiveclub,Zyxel,Bliss Whitnell
+440,Pasadena,Analyst - Sales Ops & Finance,45151,DabZ,VTC,Winnie Coleiro
+441,El Segundo,Medical Review Specialist,57862,Aimbu,Hydrogeology,Darlene Loisi
+442,Los Angeles,Data Analyst - Cardiology,85379,Dynava,Patrol,Cassondra Wallage
+443,Burbank,Associate Research Scientist,98230,Dazzlesphere,RMIS,Jerald Huddles
+444,Los Angeles,Research and Brand Strategy Apprentice,122320,Topicware,Fleet Management,Kerwin Levin
+445,El Segundo,City Research Scientist II,107960,Skyndu,PMM,Madeline Grieve
+446,Plymouth Meeting,Business Intelligence Engineer,47418,Skinix,Digital Signal Processors,Hansiain Schlagh
+447,Philadelphia,Data Engineer,98429,Teklist,Finance,Golda Burgise
+448,Spring House,Research Data Associate,124676,Edgeify,Cyberlaw,Tricia Peaddie
+449,Philadelphia,"Senior Analyst, Quantitative Research",78468,Youopia,QMF,Garrard Billson
+450,Newtown,"Research Engineer, Senior",92156,Skibox,Data Modeling,Kippie Ribey
