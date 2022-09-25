@@ -1,0 +1,37 @@
+DMDD Class Notes- 09/23/2022
+
+Jobs Database Process flow:
+1. Upload and Parse CV
+2. Employer uploads job posting
+3. Database will match cv info to jobs and allow users to swipe on jobs they like and dislike
+4. Employers and Employees match and are invited to connect
+
+Samples Questions for the Jobs Database:
+1. Are there research jobs for international students?
+2. Are there web development/finance/fintech jobs?
+3. Jobs matching skills as per the course 
+4. Probability for on-campus jobs?
+5. Will Northeastern university offer you a job after graduation
+6. Which company requires work study/non-work-study requirements?
+7. Prerequisites for applying for work-study
+8. How many international students get hired by Northeastern University?
+9. Which companies hire international students by meeting the visa requirements?
+10. Which visa status can get which jobs?
+11. How do companies hire International students?
+12. Names of the institute(Kostas, Roux, CPS) in NEU and who are hired in these institutes. Also, where they are located?
+13. Where do we find job listings at NEU?
+14. What skills should I learn?
+15. What skills are the most important?
+16. Will jobs pay for my advanced degrees?
+17. What is the salary range offered based on different profiles? 
+
+Note- This document has been created by combining the notes received from students during class discussions.
+Contributors: Vincenzo Coppola, Rahul Gollapalli Ranganatha, Utkarsha Suresh Shirke, Supriya Tripathi.
+
+
+
+
+
+
+
+
