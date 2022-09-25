@@ -1,5 +1,6 @@
-awesome-sql
+# Data Management and Database Design  - DAMG 6210
 ===========
+## Awesome links
 
 List of tools and techniques for working with relational databases inspired by other awesome lists.
 
