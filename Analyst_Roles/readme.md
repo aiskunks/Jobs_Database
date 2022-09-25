@@ -1,8 +1,8 @@
-Title: Analyst Directory (The Jobs Database)
+# Title: Analyst Directory (The Jobs Database)
 
-Team Members: 
+## Team Members: 
 
-| Team member         | Email                         | Student-ID | 
+| Team member         | Email                         | NUID | 
 | ------------------  | ----------------------------- | ---------- |
 | Srushty Returi      | returi.s@northeastern.edu     | 002749457  |
 | Swatika Ayyappan    | ayyappan.s@northeastern.edu   | 002783598  |
@@ -10,13 +10,13 @@ Team Members:
 | Kshitijkumar Tiwari | tiwari.ks@northeastern.edu    | 002743158  |
 
 
-Tools: MySQL, Jupyter Notebook and Matplot 
+**Tools**: MySQL, Jupyter Notebook and Matplot 
 
-Project Scope:
+## Project Scope:
 
-Prospective Job Seekers will be able to find their dream role with an ease using the database that is designed for analyst jobs in our project.
+The goal of this project is to create a database to help "Prospective Job Seekers" to find their dream role with an ease using the database that is designed for analyst jobs in our project.
 
-Project Description:
+## Project Description:
 
 •	The jobs database will include all the details of various analyst job positions like salary, job description, degree requirements, number of openings, locations etc.
 
