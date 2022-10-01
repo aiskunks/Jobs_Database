@@ -1,33 +1,26 @@
-# kindo
+# Jobs Database Web Scrapper & Twitter Bot
+AI Skunks Jobs Database
 
-Kindo is a reinforcement learning high-level API enabling developers and analysts to use [Stable Baselines 3](https://github.com/DLR-RM/stable-baselines3) and [TF-Agents](https://github.com/tensorflow/agents) algorithms.
+## Web Scrapper
 
-[Stable Baselines 3](https://github.com/DLR-RM/stable-baselines3) is powered by [PyTorch](https://github.com/pytorch/pytorch).
-[TF-Agents](https://github.com/tensorflow/agents) is powered by [Tensorflow 2.X](https://github.com/tensorflow/tensorflow) \
-Kindo enables to train models using both Tensorflow 2.X and PyTorch deep learning frameworks.
+Script 1
+
+The web scrapper takes a list of job keywords from a SQL database (e.g. finance, or machine learning) and a list of cities (e.g. Boston) and scraps job postings from Indeed.com and puts those links into a SQL database.
+
+Script 2
+
+Looks for job urls that have not been visted and scraps job information from a specific job listing and puts that into a SQL database
+
+## Twitter Bot
+
+Bot Script 1
+The twitter bot  takes a list of job keywords from a SQL database (e.g. finance, or machine learning) and gets the json for those keywords and saves the json files.
 
 
-## Main features
- - [x] Training algorithms from both tf_agents and stable_baselines3 packages
- - [x] Monitoring and plotting training history, saving it in a consistent format
- - [x] stable_baselines3 similar callbacks for both stable_baselines3 and tf_agents
- - [x] Open AI gym environments compatibility
- - [ ] Open AI gym environment from `.csv` file creation
- - [ ] Bandit problems support
+Bot Script 2
 
-## Installation
-### Prerequisites
+Takes the twitter json files and removes duplicates and extracts usefull information and add longitude and latitude and stores the twiiter data in a SQL database
 
-Kindo requires python 3.8+
+Bot Script 3
 
-### Install using pip
-`pip install git+https://github.com/NEU-AI-Skunkworks/kindo.git@master`
-
-## Important Information
-
-If you use conda environment, and your kernel was killed with an error \
-`OMP: Error #15: Initializing libiomp5.dylib, but found libomp.dylib already initialized.` \
-Check out this [stackoverflow question](https://stackoverflow.com/a/54533223)
-
-## Examples
-Kindo code example notebook is provided [here](examples/kindo_example.ipynb)
+Outputs as csv file subsets of the twiiter data (e.g. machine learning tweets from June 1, 20022 to July 1, 2022)
