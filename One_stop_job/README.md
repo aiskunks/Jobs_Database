@@ -130,6 +130,7 @@ Error: No history of orders available.
  σ recruiter_twitter_handle = "SAICjobs" AND t . tweet_id = j . tweet_id
   (ρ t tweets_table ×
    ρ j job_urls)
+   
 <img width="348" alt="image" src="https://user-images.githubusercontent.com/113727586/201506678-e4e68ee9-d791-4d3c-93ae-a50897602393.png">
 
 2. Select A.twitter_handle, B.recruiter_twitter_handle, A.location from osj_users A, tweets_table B where A.twitter_handle <> B.recruiter_twitter_handle and A.location = B.recruiter_tweet_location ORDER BY A.location;
@@ -184,6 +185,7 @@ Alternate Path: Job postings are shown as null or none.
 Error: Jobs data unavailable at the moment.
 
 σ tweet_text LIKE "%database%" tweets_table
+
 <img width="382" alt="image" src="https://user-images.githubusercontent.com/113727586/201506725-94abc8c9-aba9-4a45-a156-bc7c06afc57c.png">
 
 5. Select * from tweets_table where tweet_date >= NOW() - INTERVAL 2 DAY;
@@ -199,6 +201,7 @@ Alternate Path: No Jobs posted in the given days.
 Error: No Jobs available now.
 
 σ tweet_date = π date σ date - now() tweets_table
+
 <img width="400" alt="image" src="https://user-images.githubusercontent.com/113727586/201506735-d7dd016e-e92b-406b-bf5f-372704ff2845.png">
 
 
@@ -327,6 +330,7 @@ Alternate Path: There user name is displayed with blank count value.
 Error: Job applications data not available.
 
 γ user_twitter_handle, COUNT (application_tweet_id) jobs_applied
+
 <img width="420" alt="image" src="https://user-images.githubusercontent.com/113727586/201506474-6de1c132-d5b9-471c-98bb-3aa17b28ff52.png">
 
 3. Select * from tweets_table where tweet_id IN (Select tweet_id from tweet_tags where tags = '#bakingjobs');
@@ -343,6 +347,7 @@ Error: No history of orders available.
 
 σ tweet_id IN (π tweet_id
  σ tags = "#bakingjobs" tweet_tags) tweets_table
+ 
 <img width="424" alt="image" src="https://user-images.githubusercontent.com/113727586/201506487-e98df4a5-4eb3-4574-85b7-94df07618c9b.png">
 
 4. Select t.recruiter_twitter_handle, t.tweet_text, t.tweet_date, t.profile_image_url, t.recruiter_tweet_location, j.job_url, s.user_handle from ((tweets_table t INNER JOIN job_urls j ON t.tweet_id = j.tweet_id) INNER JOIN my_saved_applications s ON t.tweet_id = s.job_tweet_id);
