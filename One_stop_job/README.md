@@ -26,8 +26,11 @@ ER diagram:
 
 
 The osj account has a login and password. This login is the same as a user’s Twitter handle. The Twitter handle is unique – hence it can also be treated as the primary key of the table.
+
 A user can apply to a job through Twitter by applying through ‘job_url’. This job URL mentioned in a tweet is stored in ‘tweet_url’ table. Every tweet that has a URL in it, will have an entry in ‘tweet_url’ table.
+
 ‘jobs_applied’ has the ‘application_tweet_id’ of the tweet which uniquely distinguishes each tweet, ‘job_url’ which is a foreign key reference to the ‘job_url’ in ‘tweet_url’ table.
+
 A user can tweet (save) how many ever jobs he/she wants and add them to ‘my_saved_applications’. Hence ‘my_saved_applications’ has a composite key with is a combination of both ‘job_tweet_id’ and ‘user_handle’ in the table.
 
 
@@ -38,6 +41,7 @@ UML diagram:
 SQL Statements for the conceptual model:
 
 •tweets_table:
+
  CREATE TABLE `tweets_table` (
   `tweet_id` bigint NOT NULL,
   `recruiter_twitter_handle` varchar(64) DEFAULT NULL,
@@ -48,6 +52,7 @@ SQL Statements for the conceptual model:
  PRIMARY KEY (`tweet_id`) );
  
 •tweets_tags:
+
  CREATE TABLE `tweet_tags` (
   `tweet_id` bigint NOT NULL,
   `tags` varchar(256) DEFAULT NULL,
@@ -55,6 +60,7 @@ SQL Statements for the conceptual model:
    CONSTRAINT `USER_TAG_CONSTRAINT` FOREIGN KEY (`tweet_id`) REFERENCES `tweets_table` (`tweet_id`) );
 
 •job_urls:
+
  CREATE TABLE `job_urls` (
   `tweet_id` bigint DEFAULT NULL,
   `job_url` varchar(256) NOT NULL,
@@ -63,6 +69,7 @@ SQL Statements for the conceptual model:
   CONSTRAINT `TWEET_URL_CONSTRAINT` FOREIGN KEY (`tweet_id`) REFERENCES `tweets_table` (`tweet_id`) );
 
 •osj_acount:
+
 CREATE TABLE `osj_account` (
   `twitter_handle` varchar(256) NOT NULL,
   `password` varchar(256) DEFAULT NULL,
@@ -70,6 +77,7 @@ CREATE TABLE `osj_account` (
   PRIMARY KEY (`twitter_handle`) );
 
 •osj_users:
+
 CREATE TABLE `osj_users` (
   `twitter_handle` varchar(256) NOT NULL,
   `screen_name` varchar(256) DEFAULT NULL,
@@ -81,6 +89,7 @@ CREATE TABLE `osj_users` (
   CONSTRAINT `USER_CONSTRAINT` FOREIGN KEY (`twitter_handle`) REFERENCES `osj_account` (`twitter_handle`) );
 
 •my_saved_applications:
+
 CREATE TABLE `my_saved_applications` (
   `job_tweet_id` bigint NOT NULL,
   `recruiter_twitter_handle` varchar(256) DEFAULT NULL,
@@ -91,6 +100,7 @@ CREATE TABLE `my_saved_applications` (
   CONSTRAINT `JOB_TWEET_ID_CONSTRAINT` FOREIGN KEY (`job_tweet_id`) REFERENCES `tweets_table` (`tweet_id`) );
 
 •jobs_applied:
+
 CREATE TABLE `jobs_applied` (
   `application_tweet_id` bigint NOT NULL,
   `job_url` varchar(256) DEFAULT NULL,
