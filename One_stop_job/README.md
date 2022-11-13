@@ -204,6 +204,95 @@ Error: Recruiter data currently unavailable.
 
 3. Sinchana Kumara
 
+1.	Select t.recruiter_twitter_handle,t.tweet_text,t.tweet_date, j.job_url from tweets_table AS t JOIN job_urls AS j ON t.tweet_id = j.tweet_id Order By t.tweet_date desc;
+
+Use Case: Displaying the latest Job data to the users.
+Description: User can view latest Job postings.
+Actor: User
+Precondition: Jobs postings must contain posted date.
+Steps:
+Actor action: View latest tweets.
+System Responses: The list of Jobs ordered by posted_date in Desc are displayed to User.
+Alternate Path: There are no latest jobs postings.
+Error: No history of jobs  available.
+
+τ t . tweet_date ↓
+ π t . recruiter_twitter_handle, t . tweet_text, t . tweet_date, j . job_url
+  (ρ t tweets_table ⋈ t . tweet_id = j . tweet_id
+   ρ j job_urls)
+   
+   <img width="417" alt="image" src="https://user-images.githubusercontent.com/113727586/201506462-144d327a-db77-4529-b134-d361ec30a43c.png">
+
+   
+2.	Select Count(application_tweet_id), user_twitter_handle from jobs_applied GROUP BY user_twitter_handle;
+
+Use Case: Display the number of Jobs applied by the user.
+Description: User can view the number of Completed job Applications.
+Actor: User
+Precondition: User must have completed job applications.
+Steps:
+Actor action: User can view the number of completed Applications.
+System Responses: The number of completed job application per user are displayed.
+Alternate Path: There user name is displayed with blank count value.
+Error: Job applications data not available.
+
+γ user_twitter_handle, COUNT (application_tweet_id) jobs_applied
+<img width="420" alt="image" src="https://user-images.githubusercontent.com/113727586/201506474-6de1c132-d5b9-471c-98bb-3aa17b28ff52.png">
+
+3.	Select * from tweets_table where tweet_id IN (Select tweet_id from tweet_tags where tags = '#bakingjobs');
+
+Use Case: View the Tweets attached to the tweet with the hashtag “#bakingjobs'”
+Description: User views the links related to the hashtag “#bakingjobs'”
+Actor: User
+Precondition: Tweets must be present with the above hashtag.
+Steps:
+Actor action: User views all the links for a particular hashtag.
+System Responses: The links for the Tweets with hashtags.
+Alternate Path: There are no orders made by a user.
+Error: No history of orders available.
+
+σ tweet_id IN (π tweet_id
+ σ tags = "#bakingjobs" tweet_tags) tweets_table
+<img width="424" alt="image" src="https://user-images.githubusercontent.com/113727586/201506487-e98df4a5-4eb3-4574-85b7-94df07618c9b.png">
+
+4.	Select t.recruiter_twitter_handle, t.tweet_text, t.tweet_date, t.profile_image_url, t.recruiter_tweet_location, j.job_url, s.user_handle from ((tweets_table t INNER JOIN job_urls j ON t.tweet_id = j.tweet_id) INNER JOIN my_saved_applications s ON t.tweet_id = s.job_tweet_id);
+
+Use Case: Display users saved Jobs info such as recruiter , description , recruiter profile image.
+Description: Display data for Saved job applications.
+Actor: Admin
+Precondition: User must have saved job applications.
+Steps:
+Actor action: User can view his saved Applications.
+System Responses: Display all the users save Jobs data.
+Alternate Path: No Application data is displayed.
+Error: Saved Jobs unavailable.
+
+π t . recruiter_twitter_handle, t . tweet_text, t . tweet_date, t . profile_image_url, t . recruiter_tweet_location, j . job_url, s . user_handle
+ (ρ t tweets_table ⋈ t . tweet_id = j . tweet_id
+
+<img width="438" alt="image" src="https://user-images.githubusercontent.com/113727586/201506502-fa5cc6a5-3c26-4908-9edb-bb92370ec227.png">
+
+5.	select j.job_url, t.recruiter_twitter_handle from job_urls as j, tweets_table t where j.tweet_id = t.tweet_id;
+
+Use Case: Display all the recruiter application Links.
+Description: Display the applications links based on the recruiter.
+Actor: User
+Precondition: Recruiter must have posted application links.
+Steps:
+Actor action: User can click and view on links of Applications.
+System Responses: Display the list of Links based on the recruiter.
+Alternate Path: No Job Application Links are
+
+π j . job_url, t . recruiter_twitter_handle
+ σ j . tweet_id = t . tweet_id
+  (ρ j job_urls ×
+   ρ t tweets_table)
+
+<img width="428" alt="image" src="https://user-images.githubusercontent.com/113727586/201506514-a79f5919-c034-4ee3-8ddf-b4eff98d6592.png">
+
+
+
+
 
 
 
