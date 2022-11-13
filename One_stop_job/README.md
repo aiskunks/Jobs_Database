@@ -112,5 +112,97 @@ CREATE TABLE `jobs_applied` (
 
 USE CASE, SQL QUERIES and RELATIONAL ALGEBRA:
 
-1. NAMITHA J C
+2. NAMITHA J C
+
+1. Select DISTINCT recruiter_twitter_handle from tweets_table order by recruiter_twitter_handle;
+
+Use Case: View the recruiter handles in the database.
+Description: User views all the recruiter handles present in the database.
+Actor: User
+Precondition: Database must of data for the twitter handles.
+Steps:
+Actor action: User views all the recruiter handles.
+System Responses: The list of all recruiter handles are displayed to user.
+Alternate Path: There are no orders made by a user.
+Error: No history of orders available.
+
+δ
+ τ recruiter_twitter_handle
+  π recruiter_twitter_handle tweets_table
+  
+  <img width="398" alt="image" src="https://user-images.githubusercontent.com/113727586/201506244-143db2ea-587e-4c9d-b0a6-ada43314c45b.png">
+
+2. Select * from tweets_table where tweet_id IN (Select tweet_id from tweet_tags where tags = '#paidinternships');
+
+Use Case: View the tweets attached to the tweet with the hashtag “#paidinternships'”
+Description: User views the tweets related to the hashtag “#paidinternships'”
+Actor: User
+Precondition: Tweets must be present with the above hashtag.
+Steps:
+Actor action: User views all the links for a particular hashtag.
+System Responses: The list for the Tweets with hashtags.
+Alternate Path: There are no orders made by a user.
+Error: No history of orders available.
+
+σ tweet_id IN (π tweet_id
+ σ tags = "#paidinternships" tweet_tags)  tweets_table
+
+<img width="410" alt="image" src="https://user-images.githubusercontent.com/113727586/201506271-5345eb9d-7e2f-4ad3-80f3-4353bf8ca829.png">
+
+3.	Select t.recruiter_twitter_handle, Count(application_tweet_id) AS 'NO. Of Applications' from tweets_table as t RIGHT JOIN job_urls as j ON t.tweet_id = j.tweet_id RIGHT JOIN jobs_applied as ja ON ja.application_tweet_id = j.tweet_id Group BY t.recruiter_twitter_handle;
+
+3.Use Case: Displaying the user Applied job count with respect to recruiter.
+Description: User can Applied job count with respect to recruiter.
+Actor: User
+Precondition: User must have completed Job applications.
+Steps:
+Actor action: View Applied Job count and its recruiter.
+System Responses: The Count of Applications completed with respect to recruiter is displayed.
+Alternate Path: User has not applied to any jobs.
+Error: Completed applications are not available as of now.
+
+π t . recruiter_twitter_handle, COUNT (application_tweet_id)
+ γ COUNT (application_tweet_id) tweets_table  as no_of_Applications
+(ρ t tweets_table ⋈ t . tweet_id = j . tweet_id
+   ρ j job_urls)
+
+<img width="404" alt="image" src="https://user-images.githubusercontent.com/113727586/201506281-e890ed96-8962-4f72-a7c6-3deb8312b3c4.png">
+
+4.	Select * from osj_users where joined_date between '2022-11-09' and '2022-11-13';
+
+Use Case: Display users who have joined between November 9th 2022 and November 13th 2022.
+Description: Filter users based on joined date.
+Actor: Admin
+Precondition: User must have the field Joined Date.
+Steps:
+Actor action: Admin can filter users based on joined date.
+System Responses: Display all the users joined between the specified date.
+Alternate Path: No Users are Displayed.
+Error: User Data unavailable.
+
+σ "2022-11-09" <= joined_date AND joined_date <= "2022-11-13" osj_users
+
+<img width="395" alt="image" src="https://user-images.githubusercontent.com/113727586/201506298-2b835587-22ca-44e0-ac61-9a6cec84e454.png">
+
+5.	Select * from tweets_table where recruiter_tweet_location LIKE '%New York%';
+
+Use Case: Enable user to search recruiter location.
+Description: Display users the all the recruiter based on a location.
+Actor: User
+Precondition: Recruiter location must be present.
+Steps:
+Actor action: User can view recruiters based on a location.
+System Responses: Display all the recruiters from the search location.
+Alternate Path: No Recruiters are displayed.
+Error: Recruiter data currently unavailable.
+
+π j . job_url, t . recruiter_twitter_handle
+ σ j . tweet_id = t . tweet_id
+  (ρ j job_urls ×
+   ρ t tweets_table)
+<img width="404" alt="image" src="https://user-images.githubusercontent.com/113727586/201506310-a5dea3e1-1a04-47c3-bbee-081214518772.png">
+
+
+
+
 
