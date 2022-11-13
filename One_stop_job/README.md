@@ -16,5 +16,12 @@ Using BeautifulSoup in python, we scrape the necessary data required and store t
 
 
 
+##Assignment - 2
+
+A model of job database – one stop job using Twitter:
+
+ER diagram:
+
+<img width="468" alt="image" src="https://user-images.githubusercontent.com/113729244/201505723-2c050c31-259b-4f52-a819-f70a4f2def0f.png">
 
 
