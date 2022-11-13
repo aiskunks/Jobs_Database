@@ -111,7 +111,8 @@ CREATE TABLE `jobs_applied` (
   CONSTRAINT `JOBS_APPLIED_CONSTRAINT` FOREIGN KEY (`job_url`) REFERENCES `job_urls` (`job_url`) );
 
 USE CASE, SQL QUERIES and RELATIONAL ALGEBRA:
-1. Maheswara Sairam Palakruthy
+
+##Maheswara Sairam Palakruthy
 
 1. Select t.recruiter_twitter_handle, t.tweet_text, t.tweet_date, t.profile_image_url, j.job_url from tweets_table AS t, job_urls AS j where recruiter_twitter_handle = 'SAICjobs' AND t.tweet_id = j.tweet_id;
 
@@ -201,7 +202,7 @@ Error: No Jobs available now.
 <img width="400" alt="image" src="https://user-images.githubusercontent.com/113727586/201506735-d7dd016e-e92b-406b-bf5f-372704ff2845.png">
 
 
-2. NAMITHA J C
+##NAMITHA J C
 
 1. Select DISTINCT recruiter_twitter_handle from tweets_table order by recruiter_twitter_handle;
 
@@ -291,7 +292,7 @@ Error: Recruiter data currently unavailable.
    ρ t tweets_table)
 <img width="404" alt="image" src="https://user-images.githubusercontent.com/113727586/201506310-a5dea3e1-1a04-47c3-bbee-081214518772.png">
 
-3. Sinchana Kumara
+##Sinchana Kumara
 
 1.Select t.recruiter_twitter_handle,t.tweet_text,t.tweet_date, j.job_url from tweets_table AS t JOIN job_urls AS j ON t.tweet_id = j.tweet_id Order By t.tweet_date desc;
 
