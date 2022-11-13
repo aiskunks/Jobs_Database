@@ -113,7 +113,7 @@ CREATE TABLE `jobs_applied` (
 USE CASE, SQL QUERIES and RELATIONAL ALGEBRA:
 1. Maheswara Sairam Palakruthy
 
-1.	Select t.recruiter_twitter_handle, t.tweet_text, t.tweet_date, t.profile_image_url, j.job_url from tweets_table AS t, job_urls AS j where recruiter_twitter_handle = 'SAICjobs' AND t.tweet_id = j.tweet_id;
+1. Select t.recruiter_twitter_handle, t.tweet_text, t.tweet_date, t.profile_image_url, j.job_url from tweets_table AS t, job_urls AS j where recruiter_twitter_handle = 'SAICjobs' AND t.tweet_id = j.tweet_id;
 
 Use Case: View the details of tweeted handle, such as handle-name ,text ,tweeted date, user-profile-image-url and links present in the tweet posted by “SAICjobs”.
 Description: User views the list of data related to the tweet posted by  “#SAICjobs”.
@@ -130,7 +130,8 @@ Error: No history of orders available.
   (ρ t tweets_table ×
    ρ j job_urls)
 <img width="348" alt="image" src="https://user-images.githubusercontent.com/113727586/201506678-e4e68ee9-d791-4d3c-93ae-a50897602393.png">
-2. 2.	Select A.twitter_handle, B.recruiter_twitter_handle, A.location from osj_users A, tweets_table B where A.twitter_handle <> B.recruiter_twitter_handle and A.location = B.recruiter_tweet_location ORDER BY A.location;
+
+2. Select A.twitter_handle, B.recruiter_twitter_handle, A.location from osj_users A, tweets_table B where A.twitter_handle <> B.recruiter_twitter_handle and A.location = B.recruiter_tweet_location ORDER BY A.location;
 
 Use Case: Displaying all the tweets with the same location as the User.
 Description: User view tweets from his locality.
@@ -148,10 +149,11 @@ Error: No Jobs available from the given location.
    (ρ a osj_users ×
     ρ b tweets_table)
   
-  <img width="366" alt="image" src="https://user-images.githubusercontent.com/113727586/201506690-480a4237-6a0d-4ff3-9853-444af1fb415d.png">
-3.	Select job_url From job_urls Where tweet_id IN (Select tweet_id From tweets_table where tweet_id IN (Select tweet_id from tweet_tags where tags = '#databaseJobs'));
+<img width="366" alt="image" src="https://user-images.githubusercontent.com/113727586/201506690-480a4237-6a0d-4ff3-9853-444af1fb415d.png">
 
-3. Use Case: View the links attached to the tweet with the hashtag “#databaseJobs”
+3. Select job_url From job_urls Where tweet_id IN (Select tweet_id From tweets_table where tweet_id IN (Select tweet_id from tweet_tags where tags = '#databaseJobs'));
+
+Use Case: View the links attached to the tweet with the hashtag “#databaseJobs”
 Description: User views the links related to the hashtag “#databaseJobs”
 Actor: User
 Precondition: Tweets must be present with the above hashtag.
@@ -165,9 +167,10 @@ Error: No history of orders available.
  σ tweet_id IN  (π tweet_id
  σ tweet_id IN (π tweet_id
  σ tags = "#databaseJobs" tweet_tags) tweets_table) job_urls
+
 <img width="380" alt="image" src="https://user-images.githubusercontent.com/113727586/201506704-e6c8fe3b-6560-482e-ba7e-26df3bf62138.png">
 
-4.	Select * from tweets_table where tweet_text LIKE '%database%';
+4. Select * from tweets_table where tweet_text LIKE '%database%';
 
 Use Case: Display all the jobs with keywords “database” in them.
 Description: User can view and search  all the job postings with keyword “database” in them.
@@ -182,7 +185,7 @@ Error: Jobs data unavailable at the moment.
 σ tweet_text LIKE "%database%" tweets_table
 <img width="382" alt="image" src="https://user-images.githubusercontent.com/113727586/201506725-94abc8c9-aba9-4a45-a156-bc7c06afc57c.png">
 
-5.	 Select * from tweets_table where tweet_date >= NOW() - INTERVAL 2 DAY;
+5. Select * from tweets_table where tweet_date >= NOW() - INTERVAL 2 DAY;
 
 Use Case: Display all the job postings from the last 2 days.
 Description: Job postings from the last 2 days are displayed.
@@ -290,7 +293,7 @@ Error: Recruiter data currently unavailable.
 
 3. Sinchana Kumara
 
-1.	Select t.recruiter_twitter_handle,t.tweet_text,t.tweet_date, j.job_url from tweets_table AS t JOIN job_urls AS j ON t.tweet_id = j.tweet_id Order By t.tweet_date desc;
+1.Select t.recruiter_twitter_handle,t.tweet_text,t.tweet_date, j.job_url from tweets_table AS t JOIN job_urls AS j ON t.tweet_id = j.tweet_id Order By t.tweet_date desc;
 
 Use Case: Displaying the latest Job data to the users.
 Description: User can view latest Job postings.
@@ -307,10 +310,10 @@ Error: No history of jobs  available.
   (ρ t tweets_table ⋈ t . tweet_id = j . tweet_id
    ρ j job_urls)
    
-   <img width="417" alt="image" src="https://user-images.githubusercontent.com/113727586/201506462-144d327a-db77-4529-b134-d361ec30a43c.png">
+<img width="417" alt="image" src="https://user-images.githubusercontent.com/113727586/201506462-144d327a-db77-4529-b134-d361ec30a43c.png">
 
    
-2.	Select Count(application_tweet_id), user_twitter_handle from jobs_applied GROUP BY user_twitter_handle;
+2. Select Count(application_tweet_id), user_twitter_handle from jobs_applied GROUP BY user_twitter_handle;
 
 Use Case: Display the number of Jobs applied by the user.
 Description: User can view the number of Completed job Applications.
@@ -325,7 +328,7 @@ Error: Job applications data not available.
 γ user_twitter_handle, COUNT (application_tweet_id) jobs_applied
 <img width="420" alt="image" src="https://user-images.githubusercontent.com/113727586/201506474-6de1c132-d5b9-471c-98bb-3aa17b28ff52.png">
 
-3.	Select * from tweets_table where tweet_id IN (Select tweet_id from tweet_tags where tags = '#bakingjobs');
+3. Select * from tweets_table where tweet_id IN (Select tweet_id from tweet_tags where tags = '#bakingjobs');
 
 Use Case: View the Tweets attached to the tweet with the hashtag “#bakingjobs'”
 Description: User views the links related to the hashtag “#bakingjobs'”
@@ -341,7 +344,7 @@ Error: No history of orders available.
  σ tags = "#bakingjobs" tweet_tags) tweets_table
 <img width="424" alt="image" src="https://user-images.githubusercontent.com/113727586/201506487-e98df4a5-4eb3-4574-85b7-94df07618c9b.png">
 
-4.	Select t.recruiter_twitter_handle, t.tweet_text, t.tweet_date, t.profile_image_url, t.recruiter_tweet_location, j.job_url, s.user_handle from ((tweets_table t INNER JOIN job_urls j ON t.tweet_id = j.tweet_id) INNER JOIN my_saved_applications s ON t.tweet_id = s.job_tweet_id);
+4. Select t.recruiter_twitter_handle, t.tweet_text, t.tweet_date, t.profile_image_url, t.recruiter_tweet_location, j.job_url, s.user_handle from ((tweets_table t INNER JOIN job_urls j ON t.tweet_id = j.tweet_id) INNER JOIN my_saved_applications s ON t.tweet_id = s.job_tweet_id);
 
 Use Case: Display users saved Jobs info such as recruiter , description , recruiter profile image.
 Description: Display data for Saved job applications.
@@ -358,7 +361,7 @@ Error: Saved Jobs unavailable.
 
 <img width="438" alt="image" src="https://user-images.githubusercontent.com/113727586/201506502-fa5cc6a5-3c26-4908-9edb-bb92370ec227.png">
 
-5.	select j.job_url, t.recruiter_twitter_handle from job_urls as j, tweets_table t where j.tweet_id = t.tweet_id;
+5. select j.job_url, t.recruiter_twitter_handle from job_urls as j, tweets_table t where j.tweet_id = t.tweet_id;
 
 Use Case: Display all the recruiter application Links.
 Description: Display the applications links based on the recruiter.
