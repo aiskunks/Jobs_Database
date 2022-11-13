@@ -209,4 +209,3 @@ for x in myresult:
 applied_jobs_query = 'insert ignore into `jobs_applied` (`application_tweet_id`, `job_url`, `user_twitter_handle`, `applied_tweet_date`) values (%s, %s, %s, %s)'
 mycursor.executemany(applied_jobs_query, applied_tweets_list)
 mydb.commit()
-
