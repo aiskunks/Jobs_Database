@@ -24,7 +24,7 @@ List of tools and techniques for working with relational databases inspired by o
 
 ### <a name="mariadb"></a>MariaDB
 - [Installation on Windows](https://www.mariadbtutorial.com/getting-started/install-mariadb/)
-- [Linux](https://phoenixnap.com/kb/how-to-install-mariadb-on-centos-7)
+- [Installation on Linux](https://phoenixnap.com/kb/how-to-install-mariadb-on-centos-7)
 
 
 ### <a name="sqlserver"></a>SQL Server
@@ -66,7 +66,7 @@ List of tools and techniques for working with relational databases inspired by o
 * [Querying](#querying)
 * [Database Design](#database-design)
 * [Development](#development)
-* [Data Munging](#datamunging)
+* [Data Munging](#data-munging)
 * [Normalization](#normalization)
 
 
