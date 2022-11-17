@@ -8,6 +8,7 @@ List of tools and techniques for working with relational databases inspired by o
 - [SQL Server](#sqlserver) - Software and packages specifically for SQL Server and T-SQL.
 - [MySQL](https://github.com/shlomi-noach/awesome-mysql) - There is already a whole awesome list just for MySQL.
 - [PostgreSQL](https://github.com/dhamaniasad/awesome-postgres) - There is alread a whole awesome list just for PostgreSQL.
+- [MariaDB](#mariadb) - MariaDB is a community-developed, commercially supported fork of the MySQL relational database management system, intended to remain free and open-source software under the GNU General Public License.
 - Cross Platform Stuff
   - [Formatters](#formatter) - Tools and sites that will format your ugly SQL code.
   - [Tools](#tools) - Other cool tools and sites.
@@ -20,6 +21,11 @@ List of tools and techniques for working with relational databases inspired by o
 - [Alexandria PL/SQL Utility Library](https://github.com/mortenbra/alexandria-plsql-utils) - Collection of utility packages for PL/SQL
 - [PLSQL-JSON](https://github.com/doberkofler/PLSQL-JSON) - PL/SQL library to encode/decode JSON
 - [utPLSQL](http://utplsql.org/) - Unit testing framework for PL/SQL
+
+### <a name="mariadb"></a>MariaDB
+- [Installation on Windows](https://www.mariadbtutorial.com/getting-started/install-mariadb/)
+- [Linux](https://phoenixnap.com/kb/how-to-install-mariadb-on-centos-7)
+
 
 ### <a name="sqlserver"></a>SQL Server
 - [SQL Server Express Edition](http://www.microsoft.com/en-us/server-cloud/products/sql-server-editions/sql-server-express.aspx) - Free SQL Server Database to develop and deploy applications
@@ -60,6 +66,8 @@ List of tools and techniques for working with relational databases inspired by o
 * [Querying](#querying)
 * [Database Design](#database-design)
 * [Development](#development)
+* [Data Munging](#data munging)
+* [Normalization](#normalization)
 
 
 ## Books
@@ -128,6 +136,13 @@ List of tools and techniques for working with relational databases inspired by o
 * [SQL Server and Azure SQL Labs and Workshops](https://aka.ms/sqlworkshops)
 * [SQL Server 2019 (Labs)](https://github.com/microsoft/sqlworkshops-sql2019lab)
 * [SQL Docs (GitHub)](https://github.com/MicrosoftDocs/sql-docs)
+
+## Data Munging
+* [Data Munging Github](https://github.com/johnkabler/ga_data_munging_python)
+* [Data Munging Github Pandas/Python](https://github.com/bsweger/pandas-munging)
+* [AnalyticsVidya](https://www.analyticsvidhya.com/blog/2014/09/data-munging-python-using-pandas-baby-steps-python/)
+* [Medium](https://medium.com/quaintitative/data-munging-scale-transform-clean-in-python-9e073098fab7)
+
 -----
 
 ## Database Design
@@ -168,6 +183,12 @@ List of tools and techniques for working with relational databases inspired by o
     - [AVG](https://docs.microsoft.com/en-us/sql/t-sql/functions/avg-transact-sql),VAR, VARP, [STDEV](https://docs.microsoft.com/en-us/sql/t-sql/functions/stdev-transact-sql) and STDEVP
 * [Analytic Functions](https://docs.microsoft.com/en-us/sql/t-sql/functions/analytic-functions-transact-sql)
   - [LAG](https://docs.microsoft.com/en-us/sql/t-sql/functions/lag-transact-sql), [LEAD](https://docs.microsoft.com/en-us/sql/t-sql/functions/lead-transact-sql)
+
+## Normalization:
+[Hevodata](https://hevodata.com/learn/data-normalization/)
+[c-sharpcorner](https://www.c-sharpcorner.com/uploadfile/nipuntomar/normalization-and-its-types/)
+
+
 ### YouTube :tv:
 * [SQL Server Queries](https://www.youtube.com/watch?v=2-1XQHAgDsM&list=PL6EDEB03D20332309) - WiseOwlTutorials
 * [Querying with Transact-SQL (Channel 9)](https://channel9.msdn.com/Series/Querying-with-Transact-SQL)
