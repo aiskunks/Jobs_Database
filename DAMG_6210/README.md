@@ -66,7 +66,7 @@ List of tools and techniques for working with relational databases inspired by o
 * [Querying](#querying)
 * [Database Design](#database-design)
 * [Development](#development)
-* [Data Munging](#data munging)
+* [Data Munging](#datamunging)
 * [Normalization](#normalization)
 
 
@@ -185,8 +185,8 @@ List of tools and techniques for working with relational databases inspired by o
   - [LAG](https://docs.microsoft.com/en-us/sql/t-sql/functions/lag-transact-sql), [LEAD](https://docs.microsoft.com/en-us/sql/t-sql/functions/lead-transact-sql)
 
 ## Normalization:
-[Hevodata](https://hevodata.com/learn/data-normalization/)
-[c-sharpcorner](https://www.c-sharpcorner.com/uploadfile/nipuntomar/normalization-and-its-types/)
+- [Hevodata](https://hevodata.com/learn/data-normalization/)
+- [c-sharpcorner](https://www.c-sharpcorner.com/uploadfile/nipuntomar/normalization-and-its-types/)
 
 
 ### YouTube :tv:
