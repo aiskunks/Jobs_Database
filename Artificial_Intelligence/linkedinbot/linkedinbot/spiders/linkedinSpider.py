@@ -92,6 +92,6 @@ def startCrawling():
     for searchKeyword in searchKeywords:
         keywords = {'searchTerm': searchKeyword}
         process.crawl(LinkedinSpider, **keywords)
-    process.start()
+    process.start(stop_after_crawl=False)
 
 startCrawling()
