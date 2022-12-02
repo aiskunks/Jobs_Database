@@ -2,6 +2,11 @@ import scrapy
 from dataclasses import dataclass
 from bs4 import BeautifulSoup
 import re
+from urllib.parse import quote
+from scrapy.crawler import CrawlerProcess
+from scrapy.utils.project import get_project_settings
+
+searchKeywords = ['Data Scientist', 'AI', 'Data Analyst']
 
 @dataclass
 class JobData():
@@ -25,10 +30,17 @@ class JobData():
 class LinkedinSpider(scrapy.Spider):
     pageSizeTillNow = 0
     pageSize = 25
-    request = 'https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords=Ai&location=United%20States&geoId=103644278&trk=public_jobs_jobs-search-bar_search-submit&position=8&pageNum=0&currentJobId=3257884433&start='
-    start_urls = [request+str(pageSizeTillNow)]
     shouldEndSearching = False
     name = 'linkedinSpider'
+    request = 'https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords={{searchTerm}}&location=United%20States&geoId=103644278&trk=public_jobs_jobs-search-bar_search-submit&position=8&pageNum=0&currentJobId=3257884433&start='
+
+    def __init__(self, *args, **kwargs):
+        super(LinkedinSpider, self).__init__(*args, **kwargs)
+        encodedSearchTerm = quote(kwargs.get('searchTerm', 'hello world'))
+        print(kwargs)
+        print(encodedSearchTerm+" Hello world")
+        self.request = self.request.replace('{{searchTerm}}', encodedSearchTerm)
+        self.start_urls = [self.request+str(self.pageSizeTillNow)]
 
     def tryOptional(self, callableBlock):
         try:
@@ -73,3 +85,13 @@ class LinkedinSpider(scrapy.Spider):
             lambda: job.find(text=re.compile('Industries')).parent.parent.find('span').text.strip()
             )
         yield jobModel
+
+process = CrawlerProcess(get_project_settings())
+
+def startCrawling():
+    for searchKeyword in searchKeywords:
+        keywords = {'searchTerm': searchKeyword}
+        process.crawl(LinkedinSpider, **keywords)
+    process.start()
+
+startCrawling()
