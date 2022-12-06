@@ -433,6 +433,23 @@ Fig 5: Matrix_before
 <img width="448" alt="image" src="https://user-images.githubusercontent.com/113729244/205806276-b6c60b3d-b79b-4ebd-af02-c6b809cb0c5a.png">
 Fig 6: Bar_graph_before
 
+## Visualizing Missing Data and Validate data to check missing values (After Cleaning):
 
+<img width="444" alt="image" src="https://user-images.githubusercontent.com/113729244/205806725-6d51ffaf-5028-459c-b8ff-ddf4446a3961.png">
+Fig 7: Table_after_cleaning
 
+<img width="468" alt="image" src="https://user-images.githubusercontent.com/113729244/205806787-947b755c-9387-4d30-b7e5-21ca414b4a11.png">
+Fig 8: NullValue_count_after
+
+<img width="468" alt="image" src="https://user-images.githubusercontent.com/113729244/205806844-d19fe1a7-2f81-4f12-ac14-2d89d01578bc.png">
+Fig 9: Heatmap_after
+
+<img width="468" alt="image" src="https://user-images.githubusercontent.com/113729244/205806887-496071fa-f1c3-4896-8719-94e9889c6180.png">
+Fig 10: Dendrogram_after
+
+<img width="468" alt="image" src="https://user-images.githubusercontent.com/113729244/205806936-45c3c67c-9206-49de-bdd1-d7619608bfb4.png">
+Fig 11: Matrix_after
+
+<img width="468" alt="image" src="https://user-images.githubusercontent.com/113729244/205806965-7f6fb05e-ea5e-4d46-a567-34a090e33753.png">
+Fig 12: Bar_graph_after
 
