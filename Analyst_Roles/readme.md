@@ -25,9 +25,9 @@ The goal of this project is to create a database to help "Prospective Job Seeker
 •	 Also, the data can be used to predict suitable job roles for the users based on their skill sets using Machine Learning.
 
 
-## Assignment 3 - Gathering, Scraping, Munging and Cleaning Data
+# Assignment 3 - Gathering, Scraping, Munging and Cleaning Data
 
-# Jobs Database for Analyst Jobs:
+## Jobs Database for Analyst Jobs:
 
 This database will contain all the jobs having the keyword ‘analyst’ in the title.
 
@@ -40,7 +40,7 @@ The project files include Create_Insert_Queries.docx that consists of all the cr
 The project consists of 5 main jupyter notebooks which are:
 
 
-# First notebook (Glassdoor_Webscrapping_BS.ipnyb):
+## First notebook (Glassdoor_Webscrapping_BS.ipnyb):
 
 The data from ‘glassdoor.com’ is scraped using BeautifulSoup.
 The data collected from scraping is cleaned using python script and stored in lists.
@@ -49,12 +49,12 @@ The data stored in lists are stored in a DataFrame using the ‘pandas’ librar
 Using the ‘sqlalchemy’ library these dataframes are added to the connected database.
 Also, DataVisualisation for various columns like ‘job_position’ and ‘company_name’ and their count is done using the ‘plotly’ library.
 
-# Second notebook (Glassdoor_Rating_Review.ipnyb):
+## Second notebook (Glassdoor_Rating_Review.ipnyb):
 
 The ratings and reviews are collected from a data repository. 
 Collected data is visually represented using the ‘matplotlib’ library.
 
-# Third notebook (Job_data_Data_Repository.ipnyb):
+## Third notebook (Job_data_Data_Repository.ipnyb):
 The data downloaded from data repositories is read into the notebook using pandas.
 The data collected is cleaned using python script and stored in lists.
 Cleaned data is audited and checked for accuracy before going further.
@@ -62,10 +62,7 @@ The data stored in lists are stored in a DataFrame using the ‘pandas’ librar
 Using the ‘sqlalchemy’ library these dataframes are added to the connected database.
 
 
-
-
-
-# Fourth Notebook (Jobs_Database_Data_Repository_1.ipnyb):
+## Fourth Notebook (Jobs_Database_Data_Repository_1.ipnyb):
 The data downloaded from data repositories is read into the notebook using pandas.
 The data collected is cleaned using python script and stored in lists.
 Cleaned data is audited and checked for accuracy before going further.
