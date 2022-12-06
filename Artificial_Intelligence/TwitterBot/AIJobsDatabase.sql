@@ -68,9 +68,9 @@ Job Data Tables
 
 CREATE TABLE `company` (
   `id` bigint NOT NULL AUTO_INCREMENT,
-  `name` varchar(50) NOT NULL,
+  `name` varchar(100) NOT NULL,
   `founded_year` int,
-  `sector` varchar(50),
+  `industry` varchar(200),
   `size` varchar(50),
   `revenue` varchar(50),
   `rating` float,
@@ -95,12 +95,12 @@ CREATE TABLE `location` (
 
 CREATE TABLE `jobData` (
   `id` bigint NOT NULL AUTO_INCREMENT,
-  `title` varchar(50),
-  `description` varchar(500),
-  `datePosted` date,
+  `title` varchar(200),
+  `description` text,
+  `date_posted` date,
   `location_id` bigint,
-  `link` varchar(100) UNIQUE,
-  `seniorityLevel` varchar(50),
+  `link` varchar(1500),
+  `seniority_level` varchar(50),
   `employmentType` varchar(50),
   `company_id` bigint,
   PRIMARY KEY(`id`),
@@ -111,7 +111,7 @@ CREATE TABLE `jobData` (
 CREATE TABLE `derived_data` (
   `job_id` bigint,
   `category` varchar(50),
-  `value` varchar(50),
+  `value` varchar(500),
   FOREIGN KEY(`job_id`) REFERENCES jobData(`id`),
   PRIMARY KEY(`job_id`, `category`, `value`)
 );
