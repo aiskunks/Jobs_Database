@@ -453,3 +453,228 @@ Fig 11: Matrix_after
 <img width="468" alt="image" src="https://user-images.githubusercontent.com/113729244/205806965-7f6fb05e-ea5e-4d46-a567-34a090e33753.png">
 Fig 12: Bar_graph_after
 
+## Create Table:
+
+### Create table JOBS_LISTING_TABLE
+CREATE TABLE jobs_listing_table
+         ( Job_Title TEXT  ,
+         Job_Url TEXT PRIMARY KEY,
+         Location TEXT  ,
+         Post_Date datetime   ,
+         Salary Float );
+
+### Create table JOBS_PROFILE_TABLE
+CREATE TABLE jobs_profile_table
+         (Job_Url TEXT PRIMARY KEY ,
+          Job_Description TEXT,
+          Job_Rating FLOAT,
+          Job_Type TEXT,
+          FOREIGN KEY (job_url) REFERENCES jobs_listing_table(job_url));
+
+### Create table JOBS_DETAILS_TABLE
+CREATE TABLE IF NOT EXISTS company_details_table
+         (Job_Url TEXT PRIMARY KEY ,
+          Company_Url TEXT,
+          Company_Name FLOAT,
+          Location TEXT ,
+          FOREIGN KEY (job_url) REFERENCES jobs_listing_table(job_url));
+
+
+## Insert Table:
+
+### Insert values into JOBS_LISTING_TABLE
+'INSERT or IGNORE INTO jobs_listing_table(Job_Title, Job_Url, Location, Post_Date, Salary) VALUES (?,?,?,?,?)',(row.Job_Titile,  row.Job_URL, row.Location, row.Post_Date, row.Salary)
+
+### Insert values into JOBS_PROFILE_TABLE
+INSERT or IGNORE INTO jobs_profile_table(Job_Url, Job_Description, Job_Rating, Job_Type) VALUES (?,?,?,?)',( row.Job_URL, row.Job_description, row.Rating, row.Job_Tyoe)
+
+### Insert values into COMPANY_DETAILS_TABLE
+INSERT or IGNORE INTO company_details_table(Job_Url, Company_Url, Company_Name, Location) VALUES (?,?,?,?)',( row.Job_URL, row.Company_URL, row.Company, row.Location)
+
+## Use-cases:
+
+### Maheswara Sai Ram Palakurthy:
+
+1.Select j.job_title, j.job_url, j.location, j.salary, j.post_date, p.job_desc, p.job_rating, p.job_type from jobs_listing_table j inner join jobs_profile_table p on j.job_url = p.job_url where j.job_title LIKE "%Analyst%"; 
+
+Use Case: Displaying the details of the job profiles for Analyst Roles.
+Description: User can view the job profile details for the Analyst Roles.
+Actor: User
+Precondition: Jobs descriptions must contain details about the job profiles.
+Steps:
+Actor action: View job profile details for the Analyst Roles.
+System Responses: The list of Analyst Roles Jobs are displayed to User.
+Alternate Path: There are no jobs postings.
+Error: No history of jobs available.
+
+2.select c.company_name from company_details_table c inner join jobs_profile_table p on c.job_url = p.job_url group by company_name having avg(p.job_rating) > 2.0 and avg(p.job_rating) < 4.0;
+
+Use Case: Display the company names with average rating greater than 2 and less than 4.
+Description: User can view the company names with average rating greater than 2 and less than 4.
+Actor: User
+Precondition: Companies should have company rating.
+Steps:
+Actor action: User can view the company names with average rating greater than 2 and less than 4.
+System Responses: the company names with average rating greater than 2 and less than 4 are displayed.
+Alternate Path: No company names are displayed.
+Error: Job ratings data not available.
+
+3.select company_name, company_url, location from company_details_table where location LIKE "% MA%";
+
+Use Case: List the companies that offer employment in MA state.
+Description: User gets the list of companies that offer employment in MA state.
+Actor: User
+Precondition: Companies must be present in the given state.
+Steps:
+Actor action: View the companies that offer employment in MA state.
+System Responses: Gives the list of companies that offer employment in MA state.
+Alternate Path: No companies are present in the given state.
+Error: No jobs available now.
+
+4.select j.job_title, j.job_url, j.location, j.salary, p.job_rating, p.job_type from jobs_listing_table j inner join jobs_profile_table p on j.job_url = p.job_url where p.job_desc LIKE "%Software%" ORDER BY p.job_rating desc limit 5;
+
+Use Case: Display the list of top 5 highest rated job profiles in the domain of Software Engineering.
+Description: User views the top 5 highest rated jobs in the domain - Software Engineering. Actor: User
+Precondition: Database must have the data for the jobs in the domain - Software Engineering.
+Steps:
+Actor action: User views the top 5 highest rated jobs.
+System Responses: The list of top 5 highest rated job profiles in the domain of Software Engineering.
+Alternate Path: There are no jobs under the domain - Software Engineering.
+Error: No jobs available now.
+
+5.Select j.job_title, j.job_url, p.job_type from jobs_listing_table j inner join jobs_profile_table p on j.job_url = p.job_url where p.job_type LIKE "%Full-time%" and j.job_title LIKE "%Intern%";
+
+Use Case: List the jobs that offer Full-time opportunities for Interns.
+Description: User views the jobs that offer Full-time opportunities for Interns.
+Actor: User
+Precondition: Database must have the data for the above jobs.
+Steps:
+Actor action: User views all the jobs that offer Full-time opportunities for Interns.
+System Responses: The list jobs that offer Full-time opportunities for Interns.
+Alternate Path: There are no jobs available.
+Error: No history of jobs available.
+
+### Namitha J C:
+
+1.Select c.company_name from company_details_table c inner join jobs_profile_table p on c.job_url = p.job_url inner join jobs_listing_table j on c.job_url = j.job_url where j.job_title LIKE "%Full Stack%" group by c.company_name having max(p.job_rating) > 4.5;
+
+Use Case: Displaying the list of companies with excellent(>4.5)  employee rating in the job role of Full Stack Developer.
+Description: User can view the list of companies with excellent employee rating in the job role of Full Stack Developer.
+Actor: User
+Precondition: Companies must have excellent employee rating in the given job role.
+Steps:
+Actor action: view the list of companies with excellent employee rating in the job role of Full Stack Developer.
+System Responses: Display the list of companies with excellent employee rating in the job role of Full Stack Developer.
+Alternate Path: There are no employee rating for the given job role.
+Error: No data available.
+
+2.Select j.job_title, c.company_name, j.job_url, j.location, j.salary from jobs_listing_table j left join company_details_table c on j.job_url = c.job_url where j.job_title LIKE "%Remote%" and j.salary >= 70000;
+
+Use Case: Display the job profiles that offer at least $70000 for Remote jobs.
+Description: Filter jobs based on salary - at least $70000 for the Remote jobs.
+Actor: User
+Precondition: Jobs must have salary of at least $70000 for the given role.
+Steps:
+Actor action: View the job profiles that offer at least $70000 for the Remote jobs.
+System Responses: Display all the jobs with salary at least $70000 for the given role.
+Alternate Path: No jobs are Displayed.
+Error: Data unavailable.
+
+3.Select c.company_name, p.job_type, c.location from company_details_table c inner join jobs_profile_table p where p.job_type = "Internship" and c.location LIKE "%Boston%";
+
+Use Case: List the company urls that offer Internships in location Boston.
+Description: Displays the company urls for the given conditions.
+Actor: User
+Precondition: Company urls must be present.
+Steps:
+Actor action: User can view the list of company urls that offer Internships in location Boston.
+System Responses: Display the list of company urls for the given conditions.
+Alternate Path: No urls are displayed.
+Error: Data currently unavailable.
+
+4.Select j.job_title, AVG(p.job_rating) from jobs_profile_table p inner join jobs_listing_table j on p.job_url = j.job_url where j.job_title LIKE "%Developer%" group by j.job_title;
+
+Use Case: List the mean(rating) of the jobs available for the role of Developer.
+Description: User can view the mean rating of the jobs available for the role of Developer.
+Actor: User
+Precondition: Jobs postings must contain ratings.
+Steps:
+Actor action: View listed jobs.
+System Responses: The list of mean(rating) of the jobs available for the role of Developer.
+Alternate Path: There are no ratings for the given jobs.
+Error: No history of jobs available.
+
+5.Select j.location from jobs_listing_table j inner join jobs_profile_table p on j.job_url = p.job_url where p.job_type = "Internship" and j.job_title LIKE "%Software Engineer%";
+
+Use Case: List all the locations where Internship opportunities are offered in the role of Software Engineer.
+Description: User can view the list of locations for the given conditions.
+Actor: User
+Precondition: Internship opportunities must be available at the given locations.
+Steps:
+Actor action: User can view the list of locations for the given conditions.
+System Responses: Lists all the locations where Internship opportunities are offered in the role of Software Engineer.
+Alternate Path: Internship opportunities data not available at the given locations.
+Error: Data not available.
+
+### Sinchana Kumara:
+
+1. Select job_url from jobs_listing_table where job_title LIKE "%Java%" UNION Select j.job_url from jobs_listing_table j inner join company_details_table c on j.job_url = c.job_url where c.company_name = "Cigna";
+
+Use Case: List the Job URLs for the job role Java and the job URLs available from a company Cigna.
+Description: User views the job urls for the given conditions.
+Actor: User
+Precondition: Jobs urls must be present in the database.
+Steps:
+Actor action: User views all the job urls for the given conditions.
+System Responses: The list of Job URLs for the job role Java and the job URLs available from a company Cigna.
+Alternate Path: There are no job urls present in the database.
+Error: No data available.
+
+2. Select j.job_title, j.job_url from jobs_listing_table j inner join jobs_profile_table p on j.job_url = p.job_url where j.job_title LIKE "%Co-op%" group by j.job_title, j.job_url having avg(p.job_rating) > 3.0;
+
+Use Case: Display the list of jobs with rating greater than or equal to 3.0 for the Co-op.
+Description: Display data for above given condition.
+Actor: User
+Precondition: Ratings should be present in the database.
+Steps:
+Actor action: User can view the list of jobs with rating greater than or equal to 3.0 for the Co-op.
+System Responses: Display all the jobs with the given conditions.
+Alternate Path: No data is displayed.
+Error: Data unavailable.
+
+3. Select j.job_title, j.job_url, c.company_name from jobs_listing_table j inner join company_details_table c on j.job_url = c.job_url where j.post_date >= DATE('now', '-7 day'); 
+
+Use Case: Provide the job listings that was posted 7 days ago.
+Description: User can view the Job posted 7 days ago.
+Actor: User
+Precondition: Jobs postings must contain posted date.
+Steps:
+Actor action: View the Job posted 7 days ago.
+System Responses: Display the list of jobs posted 7 days ago.
+Alternate Path: No Jobs are available.
+Error: No history of jobs available.
+
+4. Select j.job_title, j.location, p.job_desc, p.job_type from jobs_listing_table j inner join jobs_profile_table p on j.job_url = p.job_url where p.job_type = "Contract";
+
+Use Case: Display the job description of the roles that offer Contract opportunities.
+Description: User can view the job descriptions with the given conditions.
+Actor: User
+Precondition: Job descriptions must be present in the database.
+Steps:
+Actor action: User can view the job descriptions with the given conditions.
+System Responses: Display the job description of the roles that offer Contract opportunities.
+Alternate Path: No data available.
+Error: Job description data not available.
+
+5. Select j.job_title, j.job_url, c.company_url, p.job_type, j.salary, j.location from jobs_listing_table j inner join company_details_table c on j.job_url = c.job_url inner join jobs_profile_table p on j.job_url = p.job_url where j.location LIKE "%MA%" and j.job_title LIKE "%Software%";
+
+Use Case: List the job urls, company urls, job_type from a role Software and location is MA.
+Description: User will be able to view the job urls, company urls, job_type for the given role and location.
+Actor: User
+Precondition: Urls must be present in the given database.
+Steps:
+Actor action: User views all the job urls, company urls, job_type for the given role and location.
+System Responses: Lists the job urls, company urls, job_type from a role Software and location is MA.
+Alternate Path: There are no job urls present.
+Error: No history of data available.
+
