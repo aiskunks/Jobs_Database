@@ -70,7 +70,7 @@ The data stored in lists are stored in a DataFrame using the ‘pandas’ librar
 Using the ‘sqlalchemy’ library these dataframes are added to the connected database.
 
 
-# Fifth notebook (Sample_data.ipnyb):
+## Fifth notebook (Sample_data.ipnyb):
 This notebook contains sample screenshots for all the data used for making the database.
 
 The Assignment folder also contains data downloaded from data repositories which are used in the codes.
