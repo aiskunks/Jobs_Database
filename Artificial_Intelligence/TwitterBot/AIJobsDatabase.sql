@@ -86,11 +86,11 @@ CREATE TABLE `state_data` (
 CREATE TABLE `location` (
   `id` bigint NOT NULL UNIQUE AUTO_INCREMENT,
   `city` varchar(50),
-  `state` varchar(50),
+  `state` varchar(50) NULL,
   `country` varchar(50),
   `cost_of_living_index` float,
-  PRIMARY KEY(`city`, `state`),
-  FOREIGN KEY(`state`) REFERENCES state_data(`state`)
+  CONSTRAINT unique_state_city UNIQUE(`city`, `state`),
+  PRIMARY KEY(`id`)
 );
 
 CREATE TABLE `jobData` (
