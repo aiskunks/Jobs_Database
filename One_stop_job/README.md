@@ -1,4 +1,4 @@
-One Stop Job (addition to Job database)
+# One Stop Job (addition to Job database)
 
 Team members: Namitha J C (NUID – 002795461)
 		 Sinchana Kumara (NUID – 002780971)
@@ -16,7 +16,7 @@ Using BeautifulSoup in python, we scrape the necessary data required and store t
 
 
 
-##Assignment - 2
+# Assignment - 2
 
 A model of job database – one stop job using Twitter:
 
@@ -387,6 +387,51 @@ Alternate Path: No Job Application Links are
 
 
 
+
+
+# Assignment - 3 Gathering, Scraping, Munging and Cleaning Data
+
+## Source of Data:
+
+To obtain relevant and high-quality data, choose the proper data source. For this assignment, we have collected most of the data from Indeed.
+Scraping script:
+ https://github.com/aiskunks/Jobs_Database/blob/main/One_stop_job/IndeedScraping.ipynb
+
+## Download and reformat the data:
+
+The scraped data was raw data that we audited, cleaned, and validated with completeness. This involved downloading and reformatting the raw data. 
+Please find the Github links below:
+https://github.com/aiskunks/Jobs_Database/blob/main/One_stop_job/Jobs_All.csv
+https://github.com/aiskunks/Jobs_Database/blob/main/One_stop_job/Jobs_Final.ipynb
+https://github.com/aiskunks/Jobs_Database/blob/main/One_stop_job/Jobs_All.csv
+
+## Data Validation:
+
+Completeness: refers to the extent to which an entity contains the information needed to describe a real-world object. The presence of null values, which are typically regarded as missing values, in tables in relational database systems can be used to determine how full a table is.
+
+Consistency: The degree to which a set of semantic rules are violated such as a specific data type, an interval for a numerical column, or a set of values for a categorical column.
+
+Accuracy: The correctness of the data and can be measured in two dimensions: syntactic and semantic. Semantic accuracy contrasts a value with its actual representation, while syntactic accuracy compares a value's representation with a domain of definition that corresponds.
+
+## Visualizing Missing Data and Validate data to check missing values (Before Cleaning):
+
+<img width="468" alt="image" src="https://user-images.githubusercontent.com/113729244/205805983-eb5e3077-e242-4788-948b-caef542bd702.png">
+Fig 1: Table_Before_Cleaning
+
+<img width="468" alt="image" src="https://user-images.githubusercontent.com/113729244/205806073-08632c95-f50d-4f7c-8e13-e2738631d780.png">
+Fig 2: NullValue_count_before
+
+<img width="468" alt="image" src="https://user-images.githubusercontent.com/113729244/205806134-c0354e50-6d1b-4413-b199-ec2a8d1a7191.png">
+Fig 3: Heatmap_before
+
+<img width="468" alt="image" src="https://user-images.githubusercontent.com/113729244/205806189-c779dc5a-db9b-4a4b-952b-24fd1b3eec8b.png">
+Fig 4: Dendrogram_before
+
+<img width="468" alt="image" src="https://user-images.githubusercontent.com/113729244/205806233-d555b778-b43b-480e-8483-c95f90e21402.png">
+Fig 5: Matrix_before
+
+<img width="448" alt="image" src="https://user-images.githubusercontent.com/113729244/205806276-b6c60b3d-b79b-4ebd-af02-c6b809cb0c5a.png">
+Fig 6: Bar_graph_before
 
 
 
