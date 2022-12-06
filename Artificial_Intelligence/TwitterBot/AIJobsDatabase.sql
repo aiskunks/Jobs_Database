@@ -90,7 +90,8 @@ CREATE TABLE `location` (
   `country` varchar(50),
   `cost_of_living_index` float,
   CONSTRAINT unique_state_city UNIQUE(`city`, `state`),
-  PRIMARY KEY(`id`)
+  PRIMARY KEY(`id`),
+  FOREIGN KEY(`state`) REFERENCES state_data(`state`) 
 );
 
 CREATE TABLE `jobData` (
