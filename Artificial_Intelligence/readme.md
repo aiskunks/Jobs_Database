@@ -1,36 +1,35 @@
-# AI Jobs Database 
+# AI Jobs Database
 
-
-Create a MySQL Database for AI/ML/DS Jobs where we will scrape data from multiple job portals.
-
+A MySQL Database for AI/ML/DS Jobs contains scraped data like jobs, company profile, cost of living and tax rates from [Linkedin](https://www.linkedin.com/), [Glassdoor](https://www.glassdoor.com/index.htm), [tax rates](https://www.realized1031.com/capital-gains-tax-rate) and [cost of living](https://advisorsmith.com/data/coli/#data).
 
 ### Project Features
-- Required Skillset for the job. 
-- Predict the chances of getting hired. 
-- Displaying current openings along with other details – salary, location, experience, desired skills, employment sponsorship. 
-- Get workplace satisfication reviews and great place to work ratings for a company.
-- Calculate In hand salary based of Cost of living and state tax deduction. 
+
+- Required skillsets for the job. This was extracted from job description using a pretrained Naive Bayes model.
+- Displays current openings along with other details – salary, location, experience and desired skills.
+- Workplace reviews from glassdoor.
+- Database contains cost of living at different cities along with state tax rates from which the savings and in hand salary can be computed.
 
 ### Project Execution Stages
 
-- Web scrapping. 
-- Creation of Database with ER diagram. 
-- Data cleaning and feature engineering using NLP.  
-- Creating webpage. 
-- ML model for prediction. 
-
+- Scraping jobs and company profile Glassdoor using Selenium. Also scraped jobs data from Linkedin using Scrapy and Beautiful Soup.
+- Fetch data for cost of living and state wise tax rates.
+- Creation of Database with ER diagram using Crawford Notation.
+- Build a physical MySQL database.
+- Data cleaning and feature engineering using pandas, numpy and sklearn.
+- Extract skills from job description using Naive Bayes algorithm.
+- Load the data into MySQL database.
 
 ### Future Scope
 
-- Creating an automated data pipeline for updating database. 
-- Performing Comparative analysis of user skillset and working employee skillset and recommending skillset to upscale. 
-- Creating Alumni database of Northeastern students for a referral. 
-\
-&nbsp;
+- Creating an automated data pipeline for updating database.
+- Performing Comparative analysis of user skillset and working employee skillset and recommending skillset to upscale.
+- Creating Alumni database of Northeastern students for a referral.
+  \
+  &nbsp;
 
-| Team member | Email |
-| ------ | ------ |
-| Asawari Kadam | kadam.asa@northeastern.edu |
-| Ashwini Khedkar | khedkar.as@northeastern.edu |
+| Team member        | Email                        |
+| ------------------ | ---------------------------- |
+| Asawari Kadam      | kadam.asa@northeastern.edu   |
+| Ashwini Khedkar    | khedkar.as@northeastern.edu  |
 | Hariharan Sundaram | sundaram.ha@northeastern.edu |
-| Vinay Prabhu | prabhu.v@northeastern.edu |
+| Vinay Prabhu       | prabhu.v@northeastern.edu    |
