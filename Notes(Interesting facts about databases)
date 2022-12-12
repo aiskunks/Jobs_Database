@@ -1,0 +1,114 @@
+Assignment : Notes
+
+Sneha Giranje (002785370) 
+
+
+
+
+INTERESTING FACTS ABOUT DATABASE
+
+
+
+
+1.How the Trump Campaign Built an Identity Database and Used Facebook Ads to Win the Election ?
+
+Although there may be some fake news on Facebook, the platform's ability to influence elections is extremely real. The Trump team launched the most effective digital voter suppression campaign in American history in the final weeks of the election by using data to target African Americans and young women with $150 million in Facebook and Instagram adverts.
+
+Donald J. Trump, the winner of the election, wisely spent money on Facebook adverts to contact his followers and earn money for his campaign. The Trump campaign used its specialized database, Project Alamo, which contained detailed identification profiles on 220 million Americans, in response to a lack of momentum and voter support in the polls.
+
+Link of the Article:
+
+https://medium.com/startup-grind/how-the-trump-campaign-built-an-identity-database-and-used-facebook-ads-to-win-the-election-4ff7d24269ac
+
+
+
+
+
+
+
+2.Should I query my Firebase database directly, or use Cloud Functions?
+
+Almost every software you use requires you to run a database query and display the results on the screen. By providing SDKs for apps to natively read and write the platforms' databases, Firebase makes this simple (Realtime Database and Cloud Firestorm). However, there are some circumstances in which you want to handle the query by routing all requests through a server-side component, such Cloud Functions. However, how do you decide that? When is it preferable to send a request directly from the client and when is it preferable to send it through a backend? There is no right or wrong response in this situation, so let's compare each choice based on the factors that are most crucial.
+
+Link of the Article:
+
+https://medium.com/firebase-developers/should-i-query-my-firebase-database-directly-or-use-cloud-functions-fbb3cd14118c
+
+
+
+
+
+
+
+3. 1.4 Billion Clear Text Credentials Discovered in a Single Database
+
+It is simple for cybercriminals to access billions of credentials thanks to a vast resource.
+
+In an underground community forum, even inexperienced and novice hackers can now access the largest cache of critical credentials ever. Is the plague of cybercrime set to get exponentially worse?
+
+A single file containing a database of 1.4 billion plain text credentials was uncovered by 4iQ while searching the deep and dark web for stolen, leaked, or lost data. This was the largest aggregate database ever found on the dark web.
+
+None of the passwords are encrypted, and what's frightening is that we've tested a subset of them and found that the majority of them work.
+
+The breach has nearly twice as many compromised credentials as the previous biggest credential expose, the Exploit.
+
+Link of the Article:
+
+https://medium.com/4iqdelvedeep/1-4-billion-clear-text-credentials-discovered-in-a-single-database-3131d0a1ae14
+
+
+
+
+
+
+
+4.Lessons learned scaling PostgreSQL database to 1.2bn records/month
+
+Selecting a database host, materializing data, and using the database as a work queue
+
+I've worked with huge datasets before. For the largest UK public Wi-Fi provider, I created an authentication and product management database with astonishing volumes. Every day, we monitored authentication for millions of devices. The financing for that project, however, gave us the freedom to choose any gear, any supporting services, and any DBAs to help with replication, data warehousing, and troubleshooting. Additionally, all analytics queries and reporting were performed using logical replicas, and the underlying infrastructure was managed by a number of sysadmins. In contrast, this was a business effort of mine with modest capital and 20 times the volume.
+
+Link of the Article:
+
+https://medium.com/@gajus/lessons-learned-scaling-postgresql-database-to-1-2bn-records-month-edc5449b3067
+
+
+
+
+
+
+
+5.NoSQL Databases: a Survey and Decision Guidance
+
+TL;DR
+
+Data is produced and used at a scale that has never been seen before today. In order to handle the constantly growing data volume and request loads, unique technologies for scalable data management have been developed and are referred to as "NoSQL" database systems. The complexity and diversity of the many existing systems, however, make it difficult to make a wise choice of a data store suitable for a particular application scenario. In order to provide a top-down perspective of the field, this article: We suggest a comparative classification paradigm that links functional and non-functional requirements to methods and algorithms used in NoSQL databases rather than contrasting the implementation details of individual representatives. With the aid of this NoSQL Toolbox, we can create a straightforward decision tree that can be used by academics and practitioners to screen potential system candidates in accordance with a set of centralized application requirements.
+
+Link of the Article:
+
+https://medium.com/baqend-blog/nosql-databases-a-survey-and-decision-guidance-ea7823a822d
+
+
+
+
+
+
+
+INTERESTING QUIZ QUESTIONS ON DATABASE
+
+Links to Quiz Questions:
+
+
+
+
+1. https://www.proprofs.com/quiz-school/story.php?title=databases-revision-quiz
+
+2. https://www.proprofs.com/quiz-school/story.php?title=mjcxmta0nwhtum
+
+3. https://www.examsegg.com/database-quiz-questions-and-answers.html
+
+4. https://www.softwaretestinghelp.com/database-interview-questions/
+
+5. https://data-flair.training/blogs/sql-quiz-questions-and-answers/
+
+
