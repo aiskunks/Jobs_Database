@@ -1,0 +1,108 @@
+link for sql tutorial - https://www.youtube.com/watch?v=K1WeoKxLZ5o&list=PLUaB-1hjhk8EBZNL4nx4Otoa5Wb--rEpU
+
+quiz questions -
+
+Which of the following statements are TRUE about an SQL query?
+P : An SQL query can contain a HAVING clause even if it does not have a GROUP BY clause
+Q : An SQL query can contain a HAVING clause only if it has a GROUP BY clause
+R : All attributes used in the GROUP BY clause must appear in the SELECT clause
+S : Not all attributes used in the GROUP BY clause need to appear in the SELECT clause
+
+(A) P and R
+(B) P and S
+(C) Q and R
+(D) Q and S
+
+Answer: (B)
+
+
+
+Consider the table employee(empId, name, department, salary) and the two queries Q1 ,Q2 below. Assuming that department 5 has more than one employee, and we want to find the employees who get higher salary than anyone in the department 5, which one of the statements is TRUE for any arbitrary employee table?
+Q1 : Select e.empId
+     From employee e
+     Where not exists
+        (Select * From employee s where s.department = “5” and 
+                                        s.salary >=e.salary)
+Q2 : Select e.empId
+     From employee e
+     Where e.salary > Any
+    (Select distinct salary From employee s Where s.department = “5”)
+
+(A) Q1 is the correct query
+(B) Q2 is the correct query
+(C) Both Q1 and Q2 produce the same answer.
+(D) Neither Q1 nor Q2 is the correct query
+
+Answer: (A)
+
+
+
+The statement that is executed automatically by the system as a side effect of the modification of the database is
+(A) backup
+(B) assertion
+(C) recovery
+(D) trigger
+
+Answer: (D)
+
+
+
+Select operation in SQL is equivalent to
+(A) the selection operation in relational algebra
+(B) the selection operation in relational algebra, except that select in SQL retains duplicates
+(C) the projection operation in relational algebra
+(D) the projection operation in relational algebra, except that select in SQL retains duplicates
+
+Answer: (D)
+
+
+
+Consider the relations r1(P, Q, R) and r2(R, S, T) with primary keys P and R respectively. The relation r1 contains 2000 tuples and r2 contains 2500 tuples. The maximum size of the join r1⋈ r2 is :
+(A) 2000
+(B) 2500
+(C) 4500
+(D) 5000
+
+Answer: (A)
+
+
+
+Consider the following two tables and four queries in SQL.
+Book (isbn, bname), Stock (isbn, copies)
+Query 1:
+SELECT B.isbn, S.copies
+FROM Book B INNER JOIN Stock S
+ON B.isbn = S.isbn;
+Query 2:
+SELECT B.isbn, S.copies
+FROM B B LEFT OUTER JOIN Stock S
+ON B.isbn = S.isbn;
+Query 3:
+SELECT B.isbn, S.copies
+FROM Book B RIGHT OUTER JOIN Stock S
+ON B.isbn = S.isbn;
+Query 4:
+SELECT B.isbn, S.copies
+FROM B B FULL OUTER JOIN Stock S
+ON B.isbn = S.isbn;
+Which one of the queries above is certain to have an output that is a superset of the outputs of the other three queries?
+(A) Query 1
+(B) Query 2
+(C) Query 3
+(D) Query 4
+
+Answer: (D)
+
+
+
+Consider the following three SQL queries (Assume the data in the people table):
+(a)Select Name from people where Age > 21;
+(b)Select Name from people where Height > 180;
+(c)Select Name from people where (Age > 21) or (Height > 180);
+If the SQL queries (a) and (b) above, return 10 rows and 7 rows in the result set respectively, then what is one possible number of rows returned by the SQL query (c) ?
+(A) 3
+(B) 7
+(C) 10
+(D) 21
+
+Answer: (C)

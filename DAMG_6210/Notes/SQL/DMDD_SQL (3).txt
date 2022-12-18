@@ -1,0 +1,23 @@
+Name: Gunasekhar Vinugolu
+NUID: 001586178
+
+
+DMDD NOTES:
+
+1) Database transaction is a sql statement executed in multiple tables.
+2) ACID means 
+Atomic - Operation must succeed or fail
+consistency - Operation performed in predictable way
+Isolation - One transaction cannot impact another transaction
+Durability - Any power outage or loss of database, no data should be lost.
+3) Transaction - Ensures the database never contains the result of partial operations.
+4) Transaction commit, Transaction abort are two types of methods to create Transaction SQL.
+5) MySql by default works with AUTO-COMMIT set to true, which means each individual automatically the changes permanently to database.
+6) View, Users and Permissions in MySql is a virtual table granted by the user.
+7) Jobs database through discovery does the roles application and has SQL queries.
+8) Permission Type with appropriate keyword
+9) Grant Select
+10) Query engine has three components:
+Syntax parser,
+Query optimizer,
+Execution Transaction.

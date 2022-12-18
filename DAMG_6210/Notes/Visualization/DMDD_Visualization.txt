@@ -1,0 +1,38 @@
+DMDD Class Notes- 11/16/2022
+
+Name: Chuntao Cai
+NUID: 002960552
+
+When dealing with our databases, we often need to think about data visualization. 
+
+1. Visual vocabulary
+
+There are so many ways to visualize data, including deviation, correlation, ranking, distribution, change over time, part-to-whole, magnitude, spatial and flow. We can check the visual vocabulary to decide which data relationship is most important.
+
+2. Which Visualization?
+
+Given the following data: discrete categories, ordered categories and continuous metrics, consider how to plot them. We could bin them by 1 category, 2 categories, or hierarchies. 
+
+3. Qualitative Chart Chooser
+
+For pure qualitative or some quantification, we should figure out what story we are trying to tell. It is quite different when it comes to highlighting a word or just thematic analysis.
+
+4. Data Visualization Checklist
+
+When we try to develop high impact data visualizations, we could refer to the data visualization checklist. According to each scoring point, a total score is finally obtained. Well-formatted data visualizations score between 90-100% of available points. At this level, viewers are better able to read, interpret, and retain content. 
+
+5. Design for delight
+
+Design is very important when we present data. When we design a chart, we should consider clear and relevant axes, units, data labels, legends, position & format and titles. DataViz Catalogue helps you select the best type of visualization for the function or relationship you’d like to depict, from standard bar graphs to histograms and timelines. We should consider the psychology of design and principles of visual design as well.
+
+6. Flourish
+
+https://app.flourish.studio/templates
+
+Flourish is a nice platform to choose a template for our design. We can choose a design based on the actual data type and requirements for presentation.
+
+7. What is Pandas? Why and How to Use Pandas in Python
+
+https://www.youtube.com/watch?v=dcqPhpY7tWk
+
+This is a short explainer video on pandas in python. It tell us what pandas is, why it's used and give a couple of tutorials on how to use it. The youtuber does some exploratory analysis of the titanic data set and show us how pandas can work with time series using stock market data.
