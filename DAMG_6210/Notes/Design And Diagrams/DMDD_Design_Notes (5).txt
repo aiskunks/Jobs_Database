@@ -1,0 +1,37 @@
+DMDD Notes (23rd Sep, 2022, Fri)
+
+Plan for future Lectures:
+- Create english questions to get data from database
+- Come up with questions without looking at the data
+- Jobs available for international students
+- Create ERM Modelling after gathering the data
+- Start with SQL and build the database
+
+Samples Questions:
+1. Are there research jobs for international students?
+2. Are there finance jobs?
+3. Jobs matching skills as per the course 
+4. Probablity for on campus jobs?
+5. Will Northeastern university offer you job after graduation
+6. Which company requires work study/non work study requirements?
+7. Prerequisites for applying for work study
+8. How many international students get hired from Northeastern University?
+9. Which companies hire the international student by meeting the visa requirements?
+10. Which visa status can get which jobs?
+11. How do companies hire International students?
+12. Names of the institute(Kostas, Roux, CPS) in NEU and who are hired in this institutes. Also, where they are located?
+13. Where do we find job listings at NEU?
+
+
+Assignment 2: Modelling One - Ten English questions for your database
+
+- Discuss with TA's if all the group members need to upload the assignment or not
+- Better if all team members in a group upload it on Canvas and Github
+
+
+
+
+
+
+
+

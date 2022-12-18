@@ -1,0 +1,42 @@
+Notes:
+
+Questions for Job Database
+
+1. Why database is useful?
+2. What information will it provide?
+3. What tables will be needed for the database?
+
+Purpose of the assignment to make clear if the case case study is useful or not.
+
+UML Use Case Diagram (Modelling):
+
+-It is important to communicate and convey the idea clearly using UML.
+-Represent a person, company, job profile in job database to get information
+-Actors (Person) is external entity
+-For job db, primary or secondary actors is not important aspect
+-We may have different use cases in job database like login into the jobs website, available jobs.
+-Include Use case is a part of Base Use case.
+-From attributes, we can find specific details such as first name, ID, resume
+-Visibility (private,public,protected) does not exist in sql
+-Jobs db will have class such as companies and attributes like profile, experience, location,start date
+
+ER Diagrams:
+
+For Job database:
+
+Entities - company, job,skills,resumes,address
+What is the address?
+What work is done over there?
+How much work experience you have in different companies?
+Details about the company?
+ 
+Relationship: Always between 2 entities
+Answer the english questions to understand the relationships
+
+Relationship between user and job:
+- Interest
+- Apply
+- Application Date
+
+ 
+ 
