@@ -1,0 +1,28 @@
+Quiz Question:
+
+Which clause is used to skip a certain number of rows in the final result? 
+Offset
+
+State whether the below statement is True or False. The columns used in the HAVING clause must be present in the Select clause.
+True
+
+You have two tables, pricing and discounts. Common link between these tables is product_code which can have null value in both the tables. A null product_code record in pricing table is considered a match with discounts table record with NULL product_code value. Which query can perform a correct inner join on all the records including NULL records?
+
+SELECT * from pricing p JOIN discounts d ON IFNULL(p.product_code, 1) = IFNULL(d.product_code,1)
+
+product_code is a common link between pricing and discounts tables. Write a query that prints prouct_code along with its final price after discounts. Here are the names of the columns along with their purpose: discount_pct -> percentage discount (value is between 0 to 1), gross_price -> gross or original price of a product.
+
+SELECT p.product_code, (1 - d.discount_pct)*p.gross_price as final_price from pricing p JOIN discounts d USING (product_code)
+
+Which clause in SQL helps to combine two text strings?
+CONCAT
+Resourses for learning SQL:
+
+SQL Leraning Resourse (Learn SQL, In this SQL course, you'll learn how to manage large datasets and analyze real data using the standard data management language.)
+
+https://www.codecademy.com/learn/learn-sql
+
+I have also been studying from the course from “Code Basic” by Dhavel Patel (Paid Course but covers all the concepts in detail)
+
+https://codebasics.io/courses/sql-beginner-to-advanced-for-data-professionals
+
