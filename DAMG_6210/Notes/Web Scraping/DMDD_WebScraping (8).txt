@@ -1,0 +1,51 @@
+Jobs Database:
+
+Abstracts
+
+-Abstracts should be on point and easy to understand.
+
+Webscraping 
+
+-Write while loop to find the pages for jobs html
+-Parse the page information to get different pages
+-Beautiful Soup: parses a webpage
+-<a /a>: It will store links for the webpage
+-For scraping get all the a tags which will provide all the required links
+-In aparticular page, search for annotations to copy the job details
+-While parsing webpages, we need to find details abt the important information
+
+Beautiful Soup libraries:
+-We can import beautifulSoup from urllib.request
+-Difference btwn from bs4 and Beautiful soup?
+ bs4 has many libraries inside it and beautifulsoup and a single library
+
+
+How to get links from beautiful soup in python?
+-Find all with "a" character  and then filter the links for "href"
+
+for link in soup.find_all('a',href=True):   --- Syntax for getting all the links that start with 'a'
+
+Logic for getting links :
+1.Get the links
+2.Make it into external links and get the true url
+3.If all the checks are passed, check if it already exists in table.
+4.If not then put it in the table.
+
+
+-Not to duplicate the search values. For that store the checked values in database.
+
+-Demons handovers the connection to the software after getting details about the input
+
+Create connection from Python to MySql:
+
+import mysql.connector
+db = mysql.connector.connect(
+     host = "localhost",
+     user = "root",
+     passwd = "root"
+)
+
+mycursor = db.cursor()  --- Cursor is like a remote control which will help in running the commands
+
+
+
