@@ -1,0 +1,96 @@
+ASSIGNMENT: NOTES
+ARUNDHATI RAJENDRA PATHRIKAR: NUID:002780632
+
+CLOUD-BASED DBMS
+
+
+Cloud-based DBMS
+
+A cloud database is a type of database designed to operate in a hybrid or public cloud environment and aid in managing, organizing, and storing data for an organization. Cloud databases may be made available as managed databases-as-a-service (DBaaS) or may be set up on a virtual machine (VM) hosted in the cloud and self-managed by an internal IT staff.
+
+
+Types of cloud databases
+
+Cloud databases can be divided into relational databases and non-relational databases, just like a conventional on-premises database.
+
+Relational cloud databases let you organize data in predetermined relationships to understand how data is logically related. They are made up of one or more tables with columns and rows. You can query and change data in these databases using the structured query language (SQL), which typically uses a predetermined data schema. They work best when dealing with huge amounts of structured data since they are incredibly reliable and constant. Relational databases include those developed by SQL Server, Oracle, MySQL, PostgreSQL, Spanner, and Cloud SQL, among others.
+
+Unstructured data, including text from emails and mobile messages, documents, surveys, rich media files, and sensor data, is stored and managed in non-relational cloud databases. They let you save and arrange information independently of its format and don't adhere to a definite structure like relational databases. The non-relational databases MongoDB, Redis, Cassandra, Hbase, and Cloud Bigtable are a few examples.
+
+Why use a cloud-based database?
+
+Today, data production and collection are expanding rapidly. It's extremely divergent in addition to being more varied. Data can now be spread over distributed cloud applications and services as well as on-premises databases, making it challenging to combine using conventional methods. Real-time data processing is also becoming crucial for company performance since data transmission lags or delays to mission-critical applications could have disastrous results. Legacy databases confront substantial difficulties as cloud use rises and our use of data changes. Cloud databases offer many benefits like flexibility, dependability, security, and affordability. supplying a strong framework for creating cutting-edge business applications. They can quickly adjust to shifting workloads and expectations, for instance, without adding to the burdens of already stretched-thin teams
+
+
+
+
+Advantages of cloud databases
+
+Reduced operational overhead
+
+Cloud databases do not require any physical infrastructure to be managed or maintained. The provisioning, updating, and maintenance of all the hardware, operating systems, and database software falls under the purview of your cloud provider.
+
+Improved agility and scalability
+
+A new cloud database can be launched or shut down in a matter of minutes. You can test, operationalize, and validate new concepts more quickly as a result. Additionally, cloud databases can deliver consistent performance under heavy load and dynamically scale as your applications evolve.
+
+Lower total cost of ownership (TCO)
+
+Because the cloud service provider owns and manages the infrastructure, teams can concentrate on developing applications. Pay-as-you-go alternatives also enable you to furnish what you require when you require it and scale up or down in accordance with your usage.
+
+Flexible database options
+
+You can select specifically designed cloud databases with the features and performance that suit your unique use case and application requirements.
+
+Flexible database options
+You can select specifically designed cloud databases with the features and performance that suit your unique use case and application requirements.
+
+Secure and safe data
+
+To provide several levels of security and centralized security policies that can assist protect client data without stifling innovation, cloud providers invest in the latest technologies and specialists.
+
+greater dependability
+
+High availability, automated backups, and reliable disaster recovery are just a few of the capabilities that cloud platforms, including cloud databases, have pre-installed to ensure continuous connectivity and meet SLAs.
+
+
+
+Cloud database considerations
+There are several typical concerns of cloud databases to keep in mind as you plan your migration to the cloud, even if the advantages of cloud databases can help enterprises handle many contemporary challenges that hamper growth and digital transformation.
+
+Vendor lock-in 
+Difficulty integrating data with other systems
+Complex and lengthy migrations
+Underestimating cloud costs
+Possibility of connection downtime 
+Cloud security concerns
+
+Although not necessarily a list of drawbacks for cloud databases, the points mentioned above should be carefully considered when choosing a cloud service provider. You must take the time to assess the ideal cloud database and service model that satisfies your unique business requirements.
+
+
+SOME QUIZ QUESTIONS
+
+What types of databases does the cloud platform support?
+Both relational (SQL) and non-relational (No-SQL) database types.
+Relational (SQL) database.
+Non-relational (NoSQL) database.
+Special type for the cloud platform.
+
+
+What does a consumer gain when opting to utilize a virtual machine and set up a database on it?
+Ability to manage the virtual machine but not the database instance.
+Ability to manage the database instance but not the virtual machine.
+The ability to leave the management of the virtual machine and the database instance to the service provider.
+The ability to manage both the virtual machine and the database instance.
+
+How can a consumer manage/connect to a non-relational database in the cloud?
+Through a web interface that the service provider makes available.
+Through a software library that the service provider makes available.
+The consumer cannot manage non-relational databases in the cloud but can connect to them through a software library.
+Through a web interface and a software library provided by the service provider.
+
+LINK:
+
+https://www.dailyhostnews.com/top-19-cloud-database-management-system-providers
+https://youtu.be/f2M-dodlISQ
+https://www.techtarget.com/searchdatamanagement/tip/The-benefits-and-pitfalls-of-cloud-based-data-management-systems
